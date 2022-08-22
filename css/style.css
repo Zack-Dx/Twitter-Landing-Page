@@ -228,6 +228,9 @@ font-size: 13px;
   .container{
     flex-direction: column;
   }
+  .container2{
+    width: 100%;
+  }
   .section1{
     width:100%;
     display:none;
@@ -244,7 +247,7 @@ font-size: 13px;
   
   }
   .box1 h1{
-    font-size: 55px;
+    font-size: 37px;
   }
   .box2{
   display: block;
@@ -278,3 +281,36 @@ margin: auto;
     flex-wrap: wrap;
     }
   
+/*FOR Tab*/
+    @media (min-width:481px) and (max-width:768px){
+
+      .section1, .section2{
+        height: 750px;
+      }
+  .box1{
+margin-left: 0px;
+  }
+ 
+  .box2{
+    display: block;
+    height: 100px;
+  }
+.btn1 , .btn2{
+margin: 10px auto;
+}
+.Phone{
+  display: block;
+}
+.email {
+  margin-left: 60px;
+}
+
+ }
+
+ /*HUBS*/
+
+ @media(min-width:769px) and (max-width:1024px){
+  .section1 , .section2{height: 750px;
+
+  }
+ }
