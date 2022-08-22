@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.section1 {
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-size: 100% 100%;
+  width: 50%;
+  height: 625px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.section1 img {
+  height: 38%;
+  margin: auto;
+  display: inline-block;
+}
+/*Section 2*/
+.section2 {
+  background: black;
+  width: 50%;
+  height: 625px;
+  color: white;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.box1 img {
+  height: 35px;
+  width: 40px;
+  margin: 30px 20px;
+}
+
+.box1 h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 20px 20px;
+  font-size: 65px;
+  font-weight: 900;
+}
+
+.box1 h2 {
+  margin: 20px 20px;
+  font-size: 32px;
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*Box2*/
+
+.box2 {
+  display: flex;
+}
+button {
+  color: black;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+button:hover {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(123, 120, 120);
+}
+
+.btn1 {
+  width: 250px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 30px;
+
+  padding: 0px 30px;
+  border: 3px solid rgb(255, 247, 247);
+  cursor: pointer;
+}
+
+.btn1 img {
+  height: 30px;
+  margin: 2px 10px;
+}
+
+/*Btn2*/
+.btn2 {
+  width: 250px;
+  margin-left: 20px;
+  border: 3px solid rgb(244, 235, 235);
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn2 img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+hr.dotted {
+  border-top: 8px rounded rgb(15, 173, 240);
+  border-radius: 5px;
+  width: 66%;
+  margin: 20px 50px;
+}
+
+.email {
+  width: 250px;
+  margin-left: 160px;
+  display: inline-block;
+  color: white;
+  padding: 10px 0px;
+  border: 3px solid rgb(29, 155, 240);
+  border-radius: 30px;
+  font-weight: 600;
+  background-color: rgb(29, 155, 240);
+  cursor: pointer;
+}
+.email:hover {
+  background-color: rgb(14, 127, 202);
+  border: 3px solid rgb(76, 158, 240);
+}
+p {
+  font-size: 12px;
+  width: 50%;
+  color: rgb(115, 131, 134);
+  margin-top: 15px;
+  margin-left: 100px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+span {
+  color: rgb(29, 155, 240);
+  cursor: pointer;
+}
+span:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(29, 155, 240);
+}
+
+.account  {
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+.account button {
+  width: 350px;
+
+  margin-top: 30px;
+  color: rgb(29, 155, 240);
+  padding: 10px 0px;
+  border: 2px solid rgb(108, 110, 111);
+  border-radius: 30px;
+  font-weight: 600;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+.account button:hover{
+ background-color: rgb(254, 254, 254);
+ border: 2px solid rgb(240, 233, 233)
+
+}
+
+.container2{display: flex;
+    background: black;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+height: 55px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 13px;
+
+}
+.container2 a{
+margin: 10px 10px;
+color: gray;
+text-decoration: none;
+}
+.container2 a:hover{ text-decoration: underline;
+
+}
+.copyright{
+   background-color: black;
+
+  text-align: center;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+height: 50px;
+}
+.copyright span{
+  display: inline-block;
+margin-top: 10px;
+    color: gray;
+font-size: 13px;
+}
+.copyright span:hover{
+    text-decoration: none;
+}
+
+
+/*Media Queries (FOR MOBILE)*/
+
+@media (max-width:480px){
+
+  .container{
+    flex-direction: column;
+  }
+  .section1{
+    width:100%;
+    display:none;
+  }
+  .section2{
+    height: 754px;
+    width: 100%;
+  }
+  #twit{height: 19%;
+
+  }
+  .box1{
+    margin-left: 0;
+  
+  }
+  .box1 h1{
+    font-size: 55px;
+  }
+  .box2{
+  display: block;
+  
+  }
+  .btn1 , .btn2 {
+    margin: 10px auto;
+  }
+  .email{
+display: block;
+margin: auto;
+  }
+
+ hr.dotted{
+  margin: 20px auto;
+ }
+    .account{
+      display: block;
+      margin: 22px auto;
+  }
+    }
+    .account button{
+      width: 283px;
+    }
+    .container2{
+      height: 170px;
+   
+    }
+    .Phone{
+      display: flex;
+    flex-wrap: wrap;
+    }
+  
