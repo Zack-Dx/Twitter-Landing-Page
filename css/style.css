@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: black;
 }
 .container {
   display: flex;
@@ -31,7 +32,7 @@ body {
 }
 /*Section 2*/
 .section2 {
-  background: black;
+  /* background: black; */
   width: 50%;
   height: 100vh;
   color: white;
@@ -169,26 +170,25 @@ span:hover {
 }
 .account button {
   width: 350px;
-
   margin-top: 30px;
-  color: rgb(29, 155, 240);
+  color: white;
   padding: 10px 0px;
-  border: 2px solid rgb(108, 110, 111);
+  border: 2px solid rgb(29, 155, 240);
   border-radius: 30px;
   font-weight: 600;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(29, 155, 240);
   cursor: pointer;
   font-size: 18px;
 }
 
 .account button:hover {
-  background-color: rgb(254, 254, 254);
-  border: 2px solid rgb(240, 233, 233);
+  background-color: rgb(23, 130, 201);
+  border: 2px solid rgb(23, 130, 201);
 }
 
 .container2 {
   display: flex;
-  background: black;
+  /* background: black; */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -206,7 +206,7 @@ span:hover {
   text-decoration: underline;
 }
 .copyright {
-  background-color: black;
+  /* background-color: black; */
 
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -340,4 +340,41 @@ span:hover {
 }
 
 /*HUBS*/
+
+
+
+/* COLOR TOGGLE */
+
+.toggle__button {
+  background-color: #fff;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, );
+  text-align: center;
+  cursor: pointer;
+}
+.fa-sun:before {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.dark-mode {
+  background-color: white !important;
+  color: black !important;
+}
+
+.black{
+  color: black;
+}
+.blue{
+  background-color: rgb(29, 155, 240);
+}
+.invert{
+  filter: invert(1);
+}
 

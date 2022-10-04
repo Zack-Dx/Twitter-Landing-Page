@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter login Page</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+    <div class=" toggle__button" onclick="colorToggle()">
+     <div class="toggle">
+      <i  class="fa-solid fa-sun"></i>
+     </div>
+    </div>
     <div class="container">
       <div class="section1">
         <img id="twit" src="../img/twitter_PNG15.png" alt="" />
@@ -16,11 +22,11 @@
       <div class="section2">
         <div class="box1">
           <a href="https://twitter.com/"
-            ><img src="../img/symbol.png" alt=""
+            ><img class="logo" src="../img/symbol.png" alt=""
           /></a>
 
-          <h1>Happening Now</h1>
-          <h2>Join Twitter today.</h2>
+          <h1 class="heading1">Happening Now</h1>
+          <h2 class="heading2">Join Twitter today.</h2>
         </div>
         <div class="box2">
           <button class="btn1">
@@ -46,7 +52,7 @@
 
           <div class="account">
             Already have an account?
-            <button>Sign in</button>
+            <button class="signin">Sign in</button>
           </div>
         </div>
       </div>
@@ -71,5 +77,19 @@
       <a href="#">Settings</a>
     </div>
     <div class="copyright"><span>&copy; 2022 Twitter,Inc</span></div>
+
+
+
+    <script>
+      function colorToggle() {
+         const element = document.body;
+         element.classList.toggle("dark-mode");
+         document.querySelector(".fa-solid").classList.toggle("fa-moon"); 
+         document.querySelector(".account").classList.toggle("black");
+         document.querySelector(".heading1").classList.toggle("black");
+         document.querySelector(".heading2").classList.toggle("black");
+         document.querySelector(".logo").classList.toggle("invert");
+      }
+      </script>
   </body>
 </html>
