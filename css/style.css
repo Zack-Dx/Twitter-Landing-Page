@@ -242,7 +242,7 @@ span:hover {
 }
 
 .account button {
-  width: 283px;
+  width: auto;
   min-width: 150px;
   display: flex;
   justify-content: center;
@@ -343,6 +343,7 @@ span:hover {
   }
 
   .account {
+    width: auto;
     padding-bottom: 20px;
   }
 }
@@ -358,6 +359,7 @@ span:hover {
     min-width: 200px;
   }
   .account {
+    width: auto;
     margin-left: auto;
     margin-right: auto;
   }
