@@ -18,7 +18,7 @@ body {
   background-image: url(../img/background.png);
   background-position: center;
   width: 50%;
-  height: 75vh;
+  height: 100vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 .section2 {
   background: black;
   width: 50%;
-  height: 75vh;
+  height: 100vh;
   color: white;
 }
 
@@ -283,15 +283,19 @@ span:hover {
 }
 
 /*FOR Tab*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .container {
     flex-direction: column-reverse;
+    gap:0;
   }
 
-  .section1,
-  .section2 {
+  .section2{
+    width: 100vw;
+  }
+  .section1 {
     width: 100%;
-    min-height: 45vh;
+    height: 45vh;
+    overflow: hidden;
   }
 
   .section1 {
