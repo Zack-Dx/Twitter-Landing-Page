@@ -17,9 +17,8 @@ body {
 .section1 {
   background-image: url(../img/background.png);
   background-position: center;
-  background-size: 100% 100%;
   width: 50%;
-  height: 625px;
+  height: 75vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -34,7 +33,7 @@ body {
 .section2 {
   background: black;
   width: 50%;
-  height: 625px;
+  height: 75vh;
   color: white;
 }
 
@@ -223,6 +222,21 @@ span:hover {
   text-decoration: none;
 }
 
+.account button {
+  width: 283px;
+}
+
+.container2 {
+  height: 170px;
+}
+
+.Phone {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
 /*Media Queries (FOR MOBILE)*/
 
 @media (max-width: 480px) {
@@ -261,31 +275,32 @@ span:hover {
     margin: auto;
   }
 
-  hr.dotted {
-    margin: 20px auto;
-  }
   .account {
     display: block;
     margin: 22px auto;
   }
 }
-.account button {
-  width: 283px;
-}
-.container2 {
-  height: 170px;
-}
-.Phone {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 /*FOR Tab*/
-@media (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
   .section1,
   .section2 {
-    height: 750px;
+    width: 100%;
+    min-height: 45vh;
   }
+
+  .section1 {
+    background-size: unset;
+  }
+
+  .section2 {
+    height: unset;
+  }
+
   .box1 {
     margin-left: 0px;
   }
@@ -298,11 +313,24 @@ span:hover {
   .btn2 {
     margin: 10px auto;
   }
-  .Phone {
-    display: block;
+
+  hr.dotted {
+    margin: 20px auto;
   }
-  .email {
-    margin-left: 60px;
+
+  .account {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .Phone {
+    align-items: center;
+  }
+
+  .Phone p, .email, .account {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
