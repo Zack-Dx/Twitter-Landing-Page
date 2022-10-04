@@ -187,7 +187,9 @@ span:hover {
   background-color: rgb(254, 254, 254);
   border: 2px solid rgb(240, 233, 233);
 }
-
+footer{
+  position:relative;
+}
 .container2 {
   display: flex;
   background: rgb(55, 55, 55);
