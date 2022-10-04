@@ -4,6 +4,57 @@
   top: 0;
   box-sizing: border-box;
 }
+:root {
+  --color-primary: #191d2b;
+  --color-white: #FFFFFF;
+  --color-grey-2: #b2becd;   
+  --color-grey-4: #454e56;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+.light-mode {
+  --color-primary: lightblue;
+  --color-white: #454e56;
+  --color-grey-2: #6c7983;
+  --color-grey-4: #656b70; 
+}
+
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
 html,
 body {
   height: 100%;
@@ -31,10 +82,10 @@ body {
 }
 /*Section 2*/
 .section2 {
-  background: black;
+  background: var(--color-primary);
   width: 50%;
   height: 75vh;
-  color: white;
+  color: var(--color-white);
 }
 
 .box1 {
@@ -188,7 +239,7 @@ span:hover {
 
 .container2 {
   display: flex;
-  background: black;
+  background: var(--color-primary);
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -206,7 +257,7 @@ span:hover {
   text-decoration: underline;
 }
 .copyright {
-  background-color: black;
+  background-color: var(--color-grey-4);
 
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
