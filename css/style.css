@@ -69,6 +69,7 @@ body {
 
 .box2 {
   display: flex;
+  flex-wrap: wrap;
 }
 button {
   color: black;
@@ -91,7 +92,7 @@ button:hover {
   text-align: center;
   margin-left: 30px;
 
-  padding: 0px 30px;
+  padding: 2px 30px;
   border: 3px solid rgb(255, 247, 247);
   cursor: pointer;
 }
@@ -104,16 +105,34 @@ button:hover {
 /*Btn2*/
 .btn2 {
   width: 250px;
-  margin-left: 20px;
-  border: 3px solid rgb(244, 235, 235);
-  border-radius: 30px;
   font-weight: 600;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 2px 30px;
+  border: 3px solid rgb(255, 247, 247);
   cursor: pointer;
+  word-wrap: break-word;
 }
 
 .btn2 img {
   height: 30px;
   margin-right: 10px;
+}
+
+@media (max-width: 300px) {
+  .btn1 {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .btn2 {
+    flex-direction: column;
+    width: auto;
+  }
 }
 
 hr.dotted {
@@ -167,7 +186,7 @@ span:hover {
   margin-top: 30px;
 }
 .account button {
-  width: 350px;
+  width: 100px;
 
   margin-top: 30px;
   color: rgb(29, 155, 240);
@@ -224,6 +243,10 @@ span:hover {
 
 .account button {
   width: 283px;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container2 {
@@ -276,6 +299,7 @@ span:hover {
   }
 
   .account {
+    width: auto;
     display: block;
     margin: 22px auto;
   }
@@ -315,7 +339,7 @@ span:hover {
   }
 
   hr.dotted {
-    margin: 20px auto;
+    margin: 40px 50px;
   }
 
   .account {
@@ -328,11 +352,15 @@ span:hover {
     align-items: center;
   }
 
-  .Phone p, .email, .account {
+  .Phone p,
+  .email {
+    width: auto;
+    min-width: 200px;
+  }
+  .account {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 /*HUBS*/
-
