@@ -353,7 +353,9 @@ span:hover {
     align-items: center;
   }
 
-  .Phone p,
+  .Phone p {
+    width: auto;
+  }
   .email {
     width: auto;
     min-width: 200px;
