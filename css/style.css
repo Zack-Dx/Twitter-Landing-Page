@@ -329,15 +329,15 @@ span:hover {
     align-items: center;
   }
 
-  .Phone p, .email, .account {
+  .Phone p,
+  .email,
+  .account {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 /*HUBS*/
-
-
 
 /* COLOR TOGGLE */
 
@@ -350,7 +350,7 @@ span:hover {
   right: 1.5rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, );
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0);
   text-align: center;
   cursor: pointer;
 }
@@ -364,24 +364,21 @@ span:hover {
   color: black !important;
 }
 
-.black{
+.black {
   color: black;
 }
-.blue{
+.blue {
   background-color: rgb(29, 155, 240);
 }
-.invert{
+.invert {
   filter: invert(1);
 }
 
 @media only screen and (max-width: 1157px) {
-  .heading1{
+  .heading1 {
     font-size: 35px !important;
   }
-  .heading2{
+  .heading2 {
     font-size: 25px !important;
   }
-  
-
 }
-
