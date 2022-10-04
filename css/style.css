@@ -374,3 +374,14 @@ span:hover {
   filter: invert(1);
 }
 
+@media only screen and (max-width: 1157px) {
+  .heading1{
+    font-size: 35px !important;
+  }
+  .heading2{
+    font-size: 25px !important;
+  }
+  
+
+}
+
