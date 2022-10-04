@@ -283,15 +283,19 @@ span:hover {
 }
 
 /*FOR Tab*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .container {
     flex-direction: column-reverse;
+    gap:0;
   }
 
-  .section1,
-  .section2 {
+  .section2{
+    width: 100vw;
+  }
+  .section1 {
     width: 100%;
-    min-height: 45vh;
+    height: 45vh;
+    overflow: hidden;
   }
 
   .section1 {
