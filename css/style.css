@@ -18,7 +18,7 @@ body {
   background-image: url(../img/background.png);
   background-position: center;
   width: 50%;
-  height: 75vh;
+  height: 100vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 .section2 {
   background: black;
   width: 50%;
-  height: 75vh;
+  height: 100vh;
   color: white;
 }
 
