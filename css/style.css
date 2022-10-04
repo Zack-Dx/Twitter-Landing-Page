@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: black;
 }
 .container {
   display: flex;
@@ -250,7 +251,8 @@ span:hover {
 }
 
 .container2 {
-  height: 170px;
+  margin-top: 50px;
+  height: auto;
 }
 
 .Phone {
