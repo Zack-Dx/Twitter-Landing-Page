@@ -1,63 +1,71 @@
 * {
   margin: 0;
   padding: 0;
-  top: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-  width: 100%;
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
+
+/*container of the main element of the page*/
 .container {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  height: 95vh;
 }
 
-.section1 {
-  background-image: url(../img/background.png);
-  background-position: center;
-  width: 50%;
-  height: 75vh;
-  background-repeat: no-repeat;
+/*main image of twitter (left side of the screen)*/
+.container__image-background {
   display: flex;
   justify-content: center;
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 59vw;
+  height: 95vh;
 }
-
-.section1 img {
-  height: 38%;
+.container__image-background .logo__twitter {
+  height: 33%;
   margin: auto;
-  display: inline-block;
-}
-/*Section 2*/
-.section2 {
-  background: black;
-  width: 50%;
-  height: 75vh;
-  color: white;
 }
 
-.box1 {
+/*Section for login button (right side of the screen)*/
+.container__login {
+  background: black;
+  width: 50vw;
+  height: 95vh;
+  color: white;
+  border: 3px solid red;
+}
+/*title of the right side*/
+.container__login-header {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  border: 1px solid red;
 }
-
-.box1 img {
-  height: 35px;
-  width: 40px;
+/*logo of twitter*/
+.container__login-header img {
+  height: 45px;
+  width: 50px;
   margin: 30px 20px;
+  border: 1px solid red;
 }
-
-.box1 h1 {
+/*main title*/
+.container__login-header h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 20px 20px;
   font-size: 65px;
   font-weight: 900;
 }
-
-.box1 h2 {
+/*secondary title*/
+.container__login-header h2 {
   margin: 20px 20px;
   font-size: 32px;
   font-weight: 900;
@@ -65,7 +73,20 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/*Box2*/
+/*footer*/
+.footer {
+  border: 2px solid red;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer a, span {
+  text-decoration: none;
+  color: white;
+}
 
 .box2 {
   display: flex;
@@ -204,23 +225,7 @@ span:hover {
 .container2 a:hover {
   text-decoration: underline;
 }
-.copyright {
-  background-color: black;
 
-  text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 50px;
-}
-.copyright span {
-  display: inline-block;
-  margin-top: 10px;
-  color: gray;
-  font-size: 13px;
-}
-.copyright span:hover {
-  text-decoration: none;
-}
 
 .account button {
   width: 283px;
