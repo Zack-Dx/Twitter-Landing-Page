@@ -323,6 +323,11 @@ span:hover {
     height: auto;
     padding: 6px 30px;
   }
+
+  .Phone p {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 /*FOR Tab*/
@@ -368,16 +373,8 @@ span:hover {
 }
 
 @media (min-width:769px)and (max-width: 1140px) {
-  .Phone {
-    align-items: center;
-  }
   .section2{
     height: 100%;
-  }
-
-
-  .Phone p {
-    width: auto;
   }
 
   .email,
