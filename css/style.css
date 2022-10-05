@@ -34,6 +34,7 @@
 	background-image: url(../img/background.png);
 	background-position: center;
 	width: 50%;
+	
 	height: 85vh;
 	background-repeat: no-repeat;
 	display: flex;
@@ -172,8 +173,11 @@
 	text-decoration: underline;
 	text-decoration-color: rgb(29, 155, 240);
   }
-  footer{
+  #footer_part{
 	position:relative;
+	background-color: aliceblue;
+	color: #fff;
+	border: 2px solid white;
   }
   .account {
 	font-weight: 900;
