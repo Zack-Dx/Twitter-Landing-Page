@@ -177,7 +177,7 @@
 	position:relative;
 	background-color: aliceblue;
 	color: #fff;
-	border: 2px solid white;
+	/* border: 2px solid white; */
   }
   .account {
 	font-weight: 900;
@@ -203,7 +203,7 @@
   
   .account button:hover {
 	background-color: rgb(23, 130, 201); /*change needed*/
-	border: 2px solid rgb(23, 130, 201); /*change needed*/
+	border: 2px solid rgb(23, 130, 201); 
   }
   
   .container2 {
