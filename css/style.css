@@ -89,7 +89,7 @@ body {
 .box2 {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
 }
 button {
 	color: black;
@@ -263,7 +263,7 @@ span:hover {
 }
 
 .container2 {
-	height: 170px;
+	height: auto;
 }
 
 .Phone {
@@ -309,12 +309,20 @@ span:hover {
 	.email {
 		display: block;
 		margin: auto;
+    width: auto;
+    padding: 10px 30px;
 	}
 
 	.account {
 		display: block;
 		margin: 22px auto;
 	}
+
+  .account button {
+    width: 100%;
+    height: auto;
+    padding: 6px 30px;
+  }
 }
 
 /*FOR Tab*/
