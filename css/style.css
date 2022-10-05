@@ -41,10 +41,11 @@ body {
 }
 
 .section1 img {
-	height: 38%;
+	height: 37%;
 	margin: auto;
 	display: inline-block;
 }
+
 /*Section 2*/
 .section2 {
   /* background: black; */
@@ -58,6 +59,8 @@ body {
 	flex-direction: column;
 	margin-left: 20px;
 }
+
+
 
 .box1 img {
 	height: 35px;
