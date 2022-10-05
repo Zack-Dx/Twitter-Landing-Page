@@ -24,54 +24,59 @@
         <i class="fa-solid fa-sun"></i>
       </div>
     </div>
-
-    <section class="container">
-      <div class="container__logo">
+    <div class="container">
+      <div class="section1">
+        <div class="logo"></div>
         <img id="twit" src="./img/twitter-symbol.png" alt="Logo Twitter" />
       </div>
 
-      <div class="container__rightSide">
-        <div class="container__rightSide-title">
-          <a href="https://twitter.com/">
-            <img
+      <div class="section2">
+        <div class="box1">
+          <a href="https://twitter.com/"
+            ><img
               class="logo"
               src="./img/twitter-symbol.png"
               alt="Logo Twitter"
-            />
-          </a>
+          /></a>
+
           <h1 class="heading1">Happening Now</h1>
           <h2 class="heading2">Join Twitter today.</h2>
         </div>
-        <div class="container__rightSide-button">
-          <button class="container__rightSide-button-google">
-            <img src="./img/google-logo.png" alt="Google Logo" />
-            Sign up with Google
+        <div class="box2">
+          <button class="btn1">
+            <img src="./img/google-logo.png" alt="Google Logo" />Sign up with Google
           </button>
-          <button class="container__rightSide-button-apple">
+          <button class="btn2">
             <img src="./img/apple-logo.png" alt="Apple Logo" />
             Sign up with Apple
           </button>
         </div>
 
-        <hr class="dotted" />
+        
 
-        <div class="container__rightSide-emailLogin">
-          <button class="container__rightSide-emailLogin-button">Sign up with Phone or Email</button>
-          <p id="Cookie">
+        <div class="htab">
+          <div class="left"></div>
+          <div class="center"><span>or</span></div>
+          <div class="right"></div>
+        </div>
+
+        <div class="Phone">
+          <button class="email">Sign up with Phone or Email</button>
+          <p #id="Cookie">
             By signing up, you agree to the <span>Terms of Service</span> and
             <span>Privacy Policy</span> , including <span>Cookie Use</span>.
           </p>
 
-          <div class="container__rightSide-login">
+          <div class="account">
             Already have an account?
             <button class="signin">Sign in</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <footer>
-      <div class="footer">
+      <div class="container2">
         <a href="#">About</a>
         <a href="#">Help Center</a>
         <a href="#">Terms and Conditions</a>
@@ -82,6 +87,7 @@
         <a href="#">Brand Resources</a>
         <a href="#">Twitter for Business</a>
         <a href="#">Settings</a>
+        
       </div>
       <div class="copyright"><span>&copy; 2022 Twitter,Inc</span></div>
     </footer>
@@ -91,7 +97,7 @@
         const element = document.body;
         element.classList.toggle("dark-mode");
         document.querySelector(".fa-solid").classList.toggle("fa-moon");
-        document.querySelector(".container__rightSide-login").classList.toggle("black");
+        document.querySelector(".account").classList.toggle("black");
         document.querySelector(".heading1").classList.toggle("black");
         document.querySelector(".heading2").classList.toggle("black");
         document.querySelector(".logo").classList.toggle("invert");
