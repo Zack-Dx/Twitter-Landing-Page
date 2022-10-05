@@ -12,9 +12,16 @@ A responsive  Twitter Landing Page  design using:
 
 
 ## Screenshots
-<img width="1414" alt="Screenshot 2022-10-05 at 10 48 03 AM" src="https://user-images.githubusercontent.com/105835098/193986780-bfa2f7df-d5ec-42e9-b7fd-613690927e70.png">
 
+1) PC/Desktop portview
 
+![s1](https://user-images.githubusercontent.com/96445392/194000177-9f72ef4e-ac9e-416c-ada1-306ff21a853a.png)
+
+![s2](https://user-images.githubusercontent.com/96445392/194000186-43983347-339a-4f6b-834f-c7de2c290b3b.png)
+
+2) Mobile portview
+
+![s4](https://user-images.githubusercontent.com/96445392/194000297-43134f26-878a-4d26-81bb-ae35fe897791.png)
 
 ## Project Contributors 🏆🏆
 
