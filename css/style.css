@@ -1,18 +1,19 @@
 @font-face {
-	font-family: "TwitterChirpBold";
-	src: url("../fonts/chirp-bold-web.woff") format("woff");
+  font-family: "TwitterChirpBold";
+  src: url("../fonts/chirp-bold-web.woff") format("woff");
 }
 
 @font-face {
-	font-family: "TwitterChirpRegular";
-	src: url("../fonts/chirp-regular-web.woff") format("woff");
+  font-family: "TwitterChirpRegular";
+  src: url("../fonts/chirp-regular-web.woff") format("woff");
 }
 
 @font-face {
-	font-family: "TwitterChirpExtendedHeavy";
-	src: url("../fonts/chirp-extended-heavy-web.woff") format("woff");
+  font-family: "TwitterChirpExtendedHeavy";
+  src: url("../fonts/chirp-extended-heavy-web.woff") format("woff");
 }
 
+<<<<<<< HEAD
 *{
 	margin: 0;
 	padding: 0;
@@ -61,21 +62,259 @@
 	margin-left: 20px;
   }
   
+=======
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.section1 {
+  background-image: url(../img/background.png);
+  background-position: center;
+  width: 50%;
+  height: 85vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.section1 img {
+  height: 38%;
+  margin: auto;
+  display: inline-block;
+}
+/*Section 2*/
+.section2 {
+  /* background: black; */
+  width: 50%;
+  height: 75vh;
+  color: white;
+  text-align: center;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.box1 img {
+  height: 50px;
+  margin: 20px 20px;
+}
+
+.box1 h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 10px 20px;
+  margin-top: 0;
+  font-size: 65px;
+  font-weight: 900;
+}
+
+.box1 h2 {
+  margin: 10px 20px;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*Box2*/
+
+.box2 {
+  display: flex;
+  justify-content: center;
+}
+button {
+  color: black;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+button:hover {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(123, 120, 120);
+}
+
+.btn1 {
+  width: 250px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 30px;
+
+  padding: 0px 30px;
+  border: 3px solid rgb(255, 247, 247);
+  cursor: pointer;
+}
+
+.btn1 img {
+  height: 30px;
+  margin: 2px 10px;
+}
+
+/*Btn2*/
+.btn2 {
+  width: 250px;
+  margin-left: 20px;
+  border: 3px solid rgb(244, 235, 235);
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn2 img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+hr.dotted {
+  border-top: 8px rounded rgb(15, 173, 240);
+  border-radius: 5px;
+  margin: 20px 50px;
+}
+
+.email {
+  display: inline-block;
+  color: white;
+  padding: 10px 40px;
+  border: 3px solid rgb(29, 155, 240);
+  border-radius: 30px;
+  font-weight: 600;
+  background-color: rgb(29, 155, 240);
+  cursor: pointer;
+}
+.email:hover {
+  background-color: rgb(14, 127, 202);
+  border: 3px solid rgb(76, 158, 240);
+}
+p {
+  font-size: 12px;
+
+  color: rgb(115, 131, 134);
+  margin-top: 20px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+span {
+  color: rgb(29, 155, 240);
+  cursor: pointer;
+}
+span:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(29, 155, 240);
+}
+footer {
+  position: relative;
+}
+.account {
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.account button {
+  margin: auto;
+  width: 350px;
+  margin-top: 28px;
+  color: white; /*change needed*/
+  padding: 10px 0px;
+  border: 2px solid rgb(29, 155, 240); /*change needed*/
+  border-radius: 30px;
+  font-weight: 600;
+  background-color: rgb(29, 155, 240); /*change needed*/
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.account button:hover {
+  background-color: rgb(23, 130, 201); /*change needed*/
+  border: 2px solid rgb(23, 130, 201); /*change needed*/
+}
+
+.container2 {
+  padding: 10px auto !important;
+  display: flex;
+  /* background: black; */
+  background: rgb(55, 55, 55); /*changed just remove this*/
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+.container2 a {
+  margin: auto 20px;
+  color: rgb(248, 245, 245);
+  text-decoration: none;
+}
+.container2 a:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+.copyright {
+  background-color: black; /*comment this to change*/
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 40px;
+}
+.copyright span {
+  display: inline-block;
+  margin: 10px 0;
+  color: gray;
+  font-size: 13px;
+}
+.copyright span:hover {
+  text-decoration: none;
+}
+
+.account button {
+  width: 283px;
+}
+
+.Phone {
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+}
+
+/*Media Queries (FOR MOBILE)*/
+
+@media (max-height: 700px) {
+>>>>>>> origin
   .box1 img {
-	height: 50px;
-	margin: 20px 20px;
+    height: 35px;
+    margin: 10px 10px;
   }
-  
   .box1 h1 {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-	  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	margin: 10px 20px;
-	margin-top: 0;
-	font-size: 65px;
-	font-weight: 900;
+    font-size: 45px;
   }
-  
   .box1 h2 {
+<<<<<<< HEAD
 	margin: 10px 20px;
 	margin-bottom: 50px;
 	font-size: 32px;
@@ -187,232 +426,157 @@
 	font-size: 20px;
 	margin-top: 20px;
 	margin-bottom: 10px;
+=======
+    font-size: 30px;
+    margin-bottom: 20px;
+>>>>>>> origin
   }
   .account button {
-	margin: auto;
-	width: 350px;
-	margin-top: 28px;
-	color: white;   /*change needed*/
-	padding: 10px 0px;
-	border: 2px solid rgb(29, 155, 240);  /*change needed*/
-	border-radius: 30px;
-	font-weight: 600;
-	background-color: rgb(29, 155, 240);  /*change needed*/
-	cursor: pointer;
-	font-size: 18px;
+    margin-top: 20px;
   }
+<<<<<<< HEAD
   
   .account button:hover {
 	background-color: rgb(23, 130, 201); /*change needed*/
 	border: 2px solid rgb(23, 130, 201); 
+=======
+}
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+>>>>>>> origin
   }
-  
   .container2 {
-	padding: 10px auto !important;
-	display: flex;
-	/* background: black; */
-	background: rgb(55, 55, 55);  /*changed just remove this*/
-	padding: 20px 10px;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-	  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	font-size: 14px;
+    width: 100%;
+    padding: 10px 10px;
   }
-  .container2 a {
-	margin: auto 20px;
-	color: rgb(248, 245, 245);
-	text-decoration: none;
+  .section1 {
+    width: 100%;
+    display: none;
   }
-  .container2 a:hover {
-	text-decoration: underline;
-	transition: 1s;
+  .section2 {
+    height: 754px;
+    width: 100%;
   }
-  .copyright {
-	background-color: black; /*comment this to change*/
-	text-align: center;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-	  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	height: 40px;
+  #twit {
+    height: 19%;
   }
-  .copyright span {
-	display: inline-block;
-	margin: 10px 0;
-	color: gray;
-	font-size: 13px;
+  .box1 {
+    margin-left: 0;
   }
-  .copyright span:hover {
-	text-decoration: none;
+  .box1 h1 {
+    font-size: 37px;
   }
-  
-  .account button {
-	width: 283px;
+  .box2 {
+    display: block;
   }
-  
+  .btn1,
+  .btn2 {
+    margin: 10px auto;
+  }
+  .email {
+    display: block;
+    margin: auto;
+  }
+
+  .account {
+    display: block;
+    margin: 22px auto;
+  }
+}
+
+/*FOR Tab*/
+@media screen and (max-width: 820px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .section2 {
+    width: 100vw;
+  }
+  .section1 {
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+  }
+
+  .section1 {
+    background-size: unset;
+  }
+
+  .section2 {
+    height: unset;
+  }
+
+  .box1 {
+    margin-left: 0px;
+  }
+
+  .box2 {
+    display: block;
+    height: 100px;
+  }
+  .btn1,
+  .btn2 {
+    margin: 10px auto;
+  }
+
+  hr.dotted {
+    margin: 20px auto;
+  }
+
+  .account {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
   .Phone {
-  
-	flex-direction: column;
-	align-items: start;
-	justify-content: center;
-	text-align: center;
+    align-items: center;
   }
-  
-  /*Media Queries (FOR MOBILE)*/
-  
-  @media (max-height: 700px){
-	.box1 img {
-	  height: 35px;
-	  margin: 10px 10px;
+
+  .Phone p,
+  .email,
+  .account {
+    margin-left: auto;
+    margin-right: auto;
   }
-  .box1 h1{
-	font-size: 45px;
-  }
-  .box1 h2{
-	font-size:30px;
-	margin-bottom: 20px;
-  }
-  .account button{
-	margin-top: 20px;
-  }
-  }
-  @media (max-width: 480px) {
-	.container {
-	  flex-direction: column;
-	}
-	.container2 {
-	  width: 100%;
-	  padding: 10px 10px;
-	}
-	.section1 {
-	  width: 100%;
-	  display: none;
-	}
-	.section2 {
-	  height: 754px;
-	  width: 100%;
-	}
-	#twit {
-	  height: 19%;
-	}
-	.box1 {
-	  margin-left: 0;
-	}
-	.box1 h1 {
-	  font-size: 37px;
-	}
-	.box2 {
-	  display: block;
-	}
-	.btn1,
-	.btn2 {
-	  margin: 10px auto;
-	}
-	.email {
-	  display: block;
-	  margin: auto;
-	}
-  
-	.account {
-	  display: block;
-	  margin: 22px auto;
-	}
-  }
-  
-  /*FOR Tab*/
-  @media screen and (max-width: 820px) {
-	.container {
-	  flex-direction: column-reverse;
-	  gap:0;
-	}
-  
-	.section2{
-	  width: 100vw;
-	}
-	.section1 {
-	  width: 100%;
-	  height: 45vh;
-	  overflow: hidden;
-	}
-  
-	.section1 {
-	  background-size: unset;
-	}
-  
-	.section2 {
-	  height: unset;
-	}
-  
-	.box1 {
-	  margin-left: 0px;
-	}
-  
-	.box2 {
-	  display: block;
-	  height: 100px;
-	}
-	.btn1,
-	.btn2 {
-	  margin: 10px auto;
-	}
-  
-	hr.dotted {
-	  margin: 20px auto;
-	}
-  
-	.account {
-	  padding-bottom: 20px;
-	}
-  }
-  
-  @media screen and (max-width: 1140px) {
-	.Phone {
-	  align-items: center;
-	}
-  
-	.Phone p, .email, .account {
-	  margin-left: auto;
-	  margin-right: auto;
-	}
-  }
-  
-  /*HUBS*/
-  
-  
-  
-  /* COLOR TOGGLE */
-  
-  .toggle__button {
-	background-color: #fff;
-	height: 2.5rem;
-	width: 2.5rem;
-	position: fixed;
-	top: 1.5rem;
-	right: 1.5rem;
-	border-radius: 50%;
-	z-index: 2000;
-	box-shadow: 0 1rem 3rem rgba(0, 0, 0, );
-	text-align: center;
-	cursor: pointer;
-  }
-  .fa-sun:before {
-	position: absolute;
-	top: 11px;
-	left: 12px;
-  }
-  .dark-mode {
-	background-color: white !important;
-	color: black !important;
-  }
-  
-  .black{
-	color: black;
-  }
-  .blue{
-	background-color: rgb(29, 155, 240);
-  }
-  .invert{
-	filter: invert(1);
-  }
-  
-  
+}
+
+/*HUBS*/
+
+/* COLOR TOGGLE */
+
+.toggle__button {
+  background-color: #fff;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+}
+.fa-sun:before {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.dark-mode {
+  background-color: white !important;
+  color: black !important;
+}
+
+.black {
+  color: black;
+}
+.blue {
+  background-color: rgb(29, 155, 240);
+}
+.invert {
+  filter: invert(1);
+}
