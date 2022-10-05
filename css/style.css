@@ -19,7 +19,7 @@
   top: 0;
   box-sizing: border-box;
 }
-html,
+
 body {
   height: 100%;
   width: 100%;
@@ -113,7 +113,7 @@ button:hover {
   margin-right: 10px;
   line-height: 25px;
   /* padding: 0px 30px; */
-  border: 3px solid rgb(255, 247, 247);
+  border: 3px solid rgb(218, 217, 217);/*---------------------*/
   cursor: pointer;
   font-size: 1vw;
   height:100%;
@@ -129,7 +129,7 @@ button:hover {
   width: 19vw;
   max-width: 250px;
   margin-left: 10px;
-  border: 3px solid rgb(244, 235, 235);
+  border: 3px solid rgb(218, 217, 217);
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
@@ -251,7 +251,7 @@ footer {
   transition: 1s;
 }
 .copyright {
-  background-color: black; /*comment this to change*/
+  /* background-color: black; comment this to change */
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -421,7 +421,7 @@ footer {
 /* COLOR TOGGLE */
 
 .toggle__button {
-  background-color: #fff;
+  background-color: rgb(180, 180, 180);
   height: 2.5rem;
   width: 2.5rem;
   position: fixed;
@@ -429,18 +429,24 @@ footer {
   right: 1.5rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0);
+  border:2px solid black;
+  justify-content: center;
   text-align: center;
   cursor: pointer;
 }
 .fa-sun:before {
   position: absolute;
-  top: 11px;
-  left: 12px;
+  top: 10px;
+  left: 10px;
 }
+
 .dark-mode {
   background-color: white !important;
   color: black !important;
+}
+
+.dark-mode .center span{
+  color:black;
 }
 
 .black {
