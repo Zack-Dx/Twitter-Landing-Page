@@ -19,6 +19,7 @@ body {
   background-image: url(../img/background.png);
   background-position: center;
   width: 50%;
+  height: 100vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
