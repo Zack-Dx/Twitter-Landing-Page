@@ -8,6 +8,7 @@ Landing pages are designed to capture specific streams of traffic — a subset o
 
 A responsive  Twitter Landing Page  design using:
 -  HTML;
+-  scss;
 -  CSS;
 
 
