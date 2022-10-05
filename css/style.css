@@ -25,67 +25,63 @@ body {
   width: 100%;
   background-color: black;
 }
+h1, h2, button, p, .container__rightSide-login, .footer, .copyright {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .container {
   display: flex;
   align-items: center;
 }
 
-.section1 {
+.container__logo {
   background-image: url(../img/background.png);
   background-position: center;
+  background-repeat: no-repeat;
   width: 50%;
   height: 85vh;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
-
-.section1 img {
+.container__logo img {
   height: 38%;
   margin: auto;
   display: inline-block;
 }
-/*Section 2*/
-.section2 {
-  /* background: black; */
+/*right side of the screen*/
+.container__rightSide {
   width: 50%;
   height: 75vh;
   color: white;
   text-align: center;
 }
 
-.box1 {
+/*title of the right side*/
+.container__rightSide-title {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
-
-.box1 img {
+.container__rightSide-title img {
   height: 50px;
   margin: 20px 20px;
 }
-
-.box1 h1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.container__rightSide-title h1 {
   margin: 10px 20px;
   margin-top: 0;
   font-size: 65px;
   font-weight: 900;
 }
-
-.box1 h2 {
+.container__rightSide-title h2 {
   margin: 10px 20px;
   margin-bottom: 50px;
   font-size: 32px;
   font-weight: 900;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/*Box2*/
-
-.box2 {
+/*container of the button*/
+.container__rightSide-button {
   display: flex;
   justify-content: center;
 }
@@ -95,33 +91,29 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 button:hover {
   background-color: rgb(255, 255, 255);
   border: 3px solid rgb(123, 120, 120);
 }
-
-.btn1 {
+/*google button*/
+.container__rightSide-button-google {
   width: 250px;
+  text-align: center;
   font-weight: 600;
   border-radius: 30px;
-  text-align: center;
-  margin-left: 30px;
-
+  margin: 0 0 0 30px;
   padding: 0px 30px;
   border: 3px solid rgb(255, 247, 247);
   cursor: pointer;
 }
-
-.btn1 img {
+.container__rightSide-button-google img {
   height: 30px;
   margin: 2px 10px;
 }
 
-/*Btn2*/
-.btn2 {
+/*apple button*/
+.container__rightSide-button-apple {
   width: 250px;
   margin-left: 20px;
   border: 3px solid rgb(244, 235, 235);
@@ -129,8 +121,7 @@ button:hover {
   font-weight: 600;
   cursor: pointer;
 }
-
-.btn2 img {
+.container__rightSide-button-apple img {
   height: 30px;
   margin-right: 10px;
 }
@@ -141,7 +132,8 @@ hr.dotted {
   margin: 20px 50px;
 }
 
-.email {
+/*button for login with email*/
+.container__rightSide-emailLogin-button {
   display: inline-block;
   color: white;
   padding: 10px 40px;
@@ -151,18 +143,15 @@ hr.dotted {
   background-color: rgb(29, 155, 240);
   cursor: pointer;
 }
-.email:hover {
+.container__rightSide-emailLogin-button:hover {
   background-color: rgb(14, 127, 202);
   border: 3px solid rgb(76, 158, 240);
 }
 p {
   font-size: 12px;
-
+  text-align: center;
   color: rgb(115, 131, 134);
   margin-top: 20px;
-  text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 span {
   color: rgb(29, 155, 240);
@@ -175,60 +164,52 @@ span:hover {
 footer {
   position: relative;
 }
-.account {
+.container__rightSide-login {
   font-weight: 900;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.account button {
+.container__rightSide-login button {
   margin: auto;
   width: 350px;
   margin-top: 28px;
-  color: white; /*change needed*/
+  color: white; 
   padding: 10px 0px;
-  border: 2px solid rgb(29, 155, 240); /*change needed*/
+  border: 2px solid rgb(29, 155, 240); 
   border-radius: 30px;
   font-weight: 600;
-  background-color: rgb(29, 155, 240); /*change needed*/
+  background-color: rgb(29, 155, 240);
   cursor: pointer;
   font-size: 18px;
 }
 
-.account button:hover {
-  background-color: rgb(23, 130, 201); /*change needed*/
-  border: 2px solid rgb(23, 130, 201); /*change needed*/
+.container__rightSide-login button:hover {
+  background-color: rgb(23, 130, 201); 
+  border: 2px solid rgb(23, 130, 201); 
 }
 
-.container2 {
+.footer {
   padding: 10px auto !important;
   display: flex;
-  /* background: black; */
-  background: rgb(55, 55, 55); /*changed just remove this*/
+  background: rgb(55, 55, 55);
   padding: 20px 10px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
-.container2 a {
+.footer a {
   margin: auto 20px;
   color: rgb(248, 245, 245);
   text-decoration: none;
 }
-.container2 a:hover {
+.footer a:hover {
   text-decoration: underline;
   transition: 1s;
 }
 .copyright {
-  background-color: black; /*comment this to change*/
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 40px;
 }
 .copyright span {
@@ -241,11 +222,11 @@ footer {
   text-decoration: none;
 }
 
-.account button {
+.container__rightSide-login button {
   width: 283px;
 }
 
-.Phone {
+.container__rightSide-emailLogin {
   flex-direction: column;
   align-items: start;
   justify-content: center;
@@ -253,20 +234,19 @@ footer {
 }
 
 /*Media Queries (FOR MOBILE)*/
-
 @media (max-height: 700px) {
-  .box1 img {
+  .container__rightSide-title img {
     height: 35px;
     margin: 10px 10px;
   }
-  .box1 h1 {
+  .container__rightSide-title h1 {
     font-size: 45px;
   }
-  .box1 h2 {
+  .container__rightSide-title h2 {
     font-size: 30px;
     margin-bottom: 20px;
   }
-  .account button {
+  .container__rightSide-login button {
     margin-top: 20px;
   }
 }
@@ -274,40 +254,40 @@ footer {
   .container {
     flex-direction: column;
   }
-  .container2 {
+  .footer {
     width: 100%;
     padding: 10px 10px;
   }
-  .section1 {
+  .container__logo {
     width: 100%;
     display: none;
   }
-  .section2 {
+  .container__rightSide {
     height: 754px;
     width: 100%;
   }
   #twit {
     height: 19%;
   }
-  .box1 {
+  .container__rightSide-title {
     margin-left: 0;
   }
-  .box1 h1 {
+  .container__rightSide-title h1 {
     font-size: 37px;
   }
-  .box2 {
+  .container__rightSide-button {
     display: block;
   }
-  .btn1,
-  .btn2 {
+  .container__rightSide-button-google,
+  .container__rightSide-button-apple {
     margin: 10px auto;
   }
-  .email {
+  .container__rightSide-emailLogin-button {
     display: block;
     margin: auto;
   }
 
-  .account {
+  .container__rightSide-login {
     display: block;
     margin: 22px auto;
   }
@@ -320,33 +300,33 @@ footer {
     gap: 0;
   }
 
-  .section2 {
+  .container__rightSide {
     width: 100vw;
   }
-  .section1 {
+  .container__logo {
     width: 100%;
     height: 45vh;
     overflow: hidden;
   }
 
-  .section1 {
+  .container__logo {
     background-size: unset;
   }
 
-  .section2 {
+  .container__rightSide {
     height: unset;
   }
 
-  .box1 {
+  .container__rightSide-title {
     margin-left: 0px;
   }
 
-  .box2 {
+  .container__rightSide-button {
     display: block;
     height: 100px;
   }
-  .btn1,
-  .btn2 {
+  .container__rightSide-button-google,
+  .container__rightSide-button-apple {
     margin: 10px auto;
   }
 
@@ -354,19 +334,19 @@ footer {
     margin: 20px auto;
   }
 
-  .account {
+  .container__rightSide-login {
     padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 1140px) {
-  .Phone {
+  .container__rightSide-emailLogin {
     align-items: center;
   }
 
-  .Phone p,
-  .email,
-  .account {
+  .container__rightSide-emailLogin p,
+  .container__rightSide-emailLogin-button,
+  .container__rightSide-login {
     margin-left: auto;
     margin-right: auto;
   }
