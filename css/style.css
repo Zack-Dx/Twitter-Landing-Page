@@ -27,7 +27,7 @@ body {
 }
 .container {
   display: flex;
- 
+  align-items: center;
 }
 
 .section1 {
@@ -88,6 +88,7 @@ body {
 
 .box2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 button {
@@ -111,7 +112,7 @@ button:hover {
 	text-align: center;
 	margin-left: 30px;
 
-	padding: 0px 30px;
+	padding: 2px 30px;
 	border: 3px solid rgb(255, 247, 247);
 	cursor: pointer;
 }
@@ -125,6 +126,11 @@ button:hover {
 .btn2 {
 	width: 250px;
 	margin-left: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px 30px;
+  word-wrap: break-word;
 	border: 3px solid rgb(244, 235, 235);
 	border-radius: 30px;
 	font-weight: 600;
@@ -134,6 +140,18 @@ button:hover {
 .btn2 img {
 	height: 30px;
 	margin-right: 10px;
+}
+
+@media (max-width: 300px) {
+  .btn1 {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .btn2 {
+    flex-direction: column;
+    width: auto;
+  }
 }
 
 hr.dotted {
@@ -245,7 +263,7 @@ span:hover {
 }
 
 .container2 {
-	height: 170px;
+	height: auto;
 }
 
 .Phone {
@@ -291,12 +309,25 @@ span:hover {
 	.email {
 		display: block;
 		margin: auto;
+    width: auto;
+    padding: 10px 30px;
 	}
 
 	.account {
 		display: block;
 		margin: 22px auto;
 	}
+
+  .account button {
+    width: 100%;
+    height: auto;
+    padding: 6px 30px;
+  }
+
+  .Phone p {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 /*FOR Tab*/
@@ -342,15 +373,10 @@ span:hover {
 }
 
 @media (min-width:769px)and (max-width: 1140px) {
-  .Phone {
-    align-items: center;
-  }
   .section2{
     height: 100%;
   }
 
-
-  .Phone p,
   .email,
   .account {
     margin-left: auto;
