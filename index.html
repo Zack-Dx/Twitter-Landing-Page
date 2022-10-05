@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter login Page</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Twitter login Page</title>
-  <link rel="icon" href="img/favicon.png">
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <div class=" toggle__button" onclick="colorToggle()">
-    <div class="toggle">
-      <i class="fa-solid fa-sun"></i>
-    </div>
-  </div>
-  <div class="container">
-    <div class="section1">
-      <img id="twit" src="../img/twitter_PNG15.png" alt="" />
-    </div>
-
-    <div class="section2">
-      <div class="box1">
-        <a href="https://twitter.com/"><img class="logo" src="../img/symbol.png" alt="" /></a>
-
-
-        <h1 class="heading1">Happening Now</h1>
-        <h2 class="heading2">Join Twitter today.</h2>
+  <body>
+    <div class="toggle__button" onclick="colorToggle()">
+      <div class="toggle">
+        <i class="fa-solid fa-sun"></i>
       </div>
-      <div class="box2">
-        <button class="btn1">
-          <img src="../img/google_PNG19630.png" alt="" />Sign up with Google
-        </button>
-        <button class="btn2">
-          <img src="../img/5a3a2721ec4cc1.15350861151376054596794637.png" alt="" />
-          Sign up with Apple
-        </button>
+    </div>
+    <div class="container">
+      <div class="section1">
+        <img id="twit" src="../img/twitter_PNG15.png" alt="" />
       </div>
 
-      <hr class="dotted" />
+      <div class="section2">
+        <div class="box1">
+          <a href="https://twitter.com/"
+            ><img class="logo" src="../img/symbol.png" alt=""
+          /></a>
 
-      <div class="Phone">
-        <button class="email">Sign up with Phone or Email</button>
-        <p #id="Cookie">
-          By signing up, you agree to the <span>Terms of Service</span> and
-          <span>Privacy Policy</span> , including <span>Cookie Use</span>.
-        </p>
+          <h1 class="heading1">Happening Now</h1>
+          <h2 class="heading2">Join Twitter today.</h2>
+        </div>
+        <div class="box2">
+          <button class="btn1">
+            <img src="../img/google_PNG19630.png" alt="" />Sign up with Google
+          </button>
+          <button class="btn2">
+            <img
+              src="../img/5a3a2721ec4cc1.15350861151376054596794637.png"
+              alt=""
+            />
+            Sign up with Apple
+          </button>
+        </div>
 
-        <div class="account">
-          Already have an account?
-          <button class="signin">Sign in</button>
+        <hr class="dotted" />
+
+        <div class="Phone">
+          <button class="email">Sign up with Phone or Email</button>
+          <p #id="Cookie">
+            By signing up, you agree to the <span>Terms of Service</span> and
+            <span>Privacy Policy</span> , including <span>Cookie Use</span>.
+          </p>
+
+          <div class="account">
+            Already have an account?
+            <button class="signin">Sign in</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="container2">
-    <a href="#">About</a>
-      <a href="#">Help Center</a>
-      <a href="#">Terms and Conditions</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Status</a>
-      <a href="#">Blog</a>
-      <a href="#">Careers</a>
-      <a href="#">Brand Resources</a>
-      <a href="#">Twitter for Business</a>
-      <a href="#">Settings</a>
-    </div>
-    <div class="copyright"><span>&copy; 2022 Twitter,Inc</span></div>
-  </footer>
+    <footer>
+      <div class="container2">
+        <a href="#">About</a>
+        <a href="#">Help Center</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Status</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Brand Resources</a>
+        <a href="#">Twitter for Business</a>
+        <a href="#">Settings</a>
+      </div>
+      <div class="copyright"><span>&copy; 2022 Twitter,Inc</span></div>
+    </footer>
 
-
-
-  <script>
-    function colorToggle() {
-      const element = document.body;
-      element.classList.toggle("dark-mode");
-      document.querySelector(".fa-solid").classList.toggle("fa-moon");
-      document.querySelector(".account").classList.toggle("black");
-      document.querySelector(".heading1").classList.toggle("black");
-      document.querySelector(".heading2").classList.toggle("black");
-      document.querySelector(".logo").classList.toggle("invert");
-    }
-  </script>
-</body>
-
+    <script>
+      function colorToggle() {
+        const element = document.body;
+        element.classList.toggle("dark-mode");
+        document.querySelector(".fa-solid").classList.toggle("fa-moon");
+        document.querySelector(".account").classList.toggle("black");
+        document.querySelector(".heading1").classList.toggle("black");
+        document.querySelector(".heading2").classList.toggle("black");
+        document.querySelector(".logo").classList.toggle("invert");
+      }
+    </script>
+  </body>
 </html>
