@@ -181,11 +181,12 @@
 	  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	font-size: 20px;
 	margin-top: 20px;
+	margin-bottom: 10px;
   }
   .account button {
 	margin: auto;
 	width: 350px;
-	margin-top: 30px;
+	margin-top: 28px;
 	color: white;   /*change needed*/
 	padding: 10px 0px;
 	border: 2px solid rgb(29, 155, 240);  /*change needed*/
@@ -202,6 +203,7 @@
   }
   
   .container2 {
+	padding: 10px auto !important;
 	display: flex;
 	/* background: black; */
 	background: rgb(55, 55, 55);  /*changed just remove this*/
@@ -214,7 +216,7 @@
 	font-size: 14px;
   }
   .container2 a {
-	margin: 10px 20px;
+	margin: auto 20px;
 	color: rgb(248, 245, 245);
 	text-decoration: none;
   }
