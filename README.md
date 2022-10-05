@@ -1,29 +1,3 @@
-<h3 align="center">
-  Twitter-Landing-Page
-</h3>
-
-## Introduction
-What is landing page in HTML?
-Landing pages are designed to capture specific streams of traffic — a subset of your website visitors targeted by your marketing campaign. For example, if you've created a full-featured mobile fitness application that includes a monthly fee, your landing page might offer a free trial period for interested users.
-
-A responsive  Twitter Landing Page  design using:
--  HTML;
--  CSS;
-
-
-## Screenshots
-
-1) PC/Desktop portview
-
-![s1](https://user-images.githubusercontent.com/96445392/194000177-9f72ef4e-ac9e-416c-ada1-306ff21a853a.png)
-
-![s2](https://user-images.githubusercontent.com/96445392/194000186-43983347-339a-4f6b-834f-c7de2c290b3b.png)
-
-2) Mobile portview
-
-![s4](https://user-images.githubusercontent.com/96445392/194000297-43134f26-878a-4d26-81bb-ae35fe897791.png)
-
-## Project Contributors 🏆🏆
-
-<a href="https://github.com/Zack-Dx/Twitter-Landing-Page/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Zack-Dx/Twitter-Landing-Page" />
+# Twitter-Landing-Page
+A responsive  Twitter Landing Page  design using HTML &amp;CSS.
+<img width="1419" alt="Screenshot 2022-08-23 at 6 50 54 PM" src="https://user-images.githubusercontent.com/105835098/186169625-37770c86-42f7-4f75-8609-c7930bb795dc.png">
