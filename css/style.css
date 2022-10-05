@@ -27,7 +27,7 @@ body {
 }
 .container {
   display: flex;
-  align-items: center;
+
 }
 
 .section1 {
@@ -47,10 +47,7 @@ body {
 }
 /*Section 2*/
 .section2 {
-  /* background: black; */
-  position: absolute;
-  top: 2rem;
-  right: 0;
+
   min-width: 45vw;
   
   color: white;
@@ -333,7 +330,7 @@ span:hover {
 }
 
 /*FOR Tab*/
-@media (min-width:481px) and (max-width: 768px) {
+@media (min-width:481px) and (max-width: 820px) {
   .container {
     flex-direction: column-reverse;
   }
@@ -374,7 +371,7 @@ span:hover {
 	}
 }
 
-@media (min-width:769px)and (max-width: 1140px) {
+@media (min-width:820px)and (max-width: 1140px) {
   .section2{
     height: 100%;
   }
