@@ -12,8 +12,8 @@ A responsive  Twitter Landing Page  design using:
 
 
 ## Screenshots
+<img width="1414" alt="Screenshot 2022-10-05 at 10 48 03 AM" src="https://user-images.githubusercontent.com/105835098/193986780-bfa2f7df-d5ec-42e9-b7fd-613690927e70.png">
 
-<img width="1419" alt="Screenshot 2022-08-23 at 6 50 54 PM" src="https://user-images.githubusercontent.com/105835098/186169625-37770c86-42f7-4f75-8609-c7930bb795dc.png">
 
 
 ## Project Contributors 🏆🏆
