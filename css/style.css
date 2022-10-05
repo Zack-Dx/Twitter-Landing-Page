@@ -2,40 +2,38 @@
   margin: 0;
   padding: 0;
   top: 0;
-  box-sizing: border-box;
 }
 html,
 body {
-  height: 100%;
-  width: 100%;
-  background-color: black;
+
+  background-color: white;
+  /* position: fixed; */
 }
 .container {
-  display: flex;
-  align-items: center;
+  display:flex;
+  
 }
 
-.section1 {
+.section1{ 
   background-image: url(../img/background.png);
   background-position: center;
   width: 50%;
   height: 100vh;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
 }
 
 .section1 img {
   height: 38%;
   margin: auto;
-  display: inline-block;
+  /* display: inline-block; */
 }
 /*Section 2*/
 .section2 {
-  /* background: black; */
-  width: 50%;
+  /* width: 50%; */
   height: 100vh;
-  color: white;
+  color: rgb(0, 0, 0);
+  align-items: center;
 }
 
 .box1 {
@@ -70,7 +68,11 @@ body {
 /*Box2*/
 
 .box2 {
-  display: flex;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+
+  
 }
 button {
   color: black;
@@ -92,15 +94,16 @@ button:hover {
   border-radius: 30px;
   text-align: center;
   margin-left: 30px;
-
-  padding: 0px 30px;
+  padding: 5px 30px;
   border: 3px solid rgb(255, 247, 247);
   cursor: pointer;
+
 }
 
 .btn1 img {
   height: 30px;
   margin: 2px 10px;
+  display: inline;
 }
 
 /*Btn2*/
@@ -109,6 +112,7 @@ button:hover {
   margin-left: 20px;
   border: 3px solid rgb(244, 235, 235);
   border-radius: 30px;
+  padding: 5px 30px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -118,11 +122,19 @@ button:hover {
   margin-right: 10px;
 }
 
+.Phone {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
 hr.dotted {
   border-top: 8px rounded rgb(15, 173, 240);
   border-radius: 5px;
   width: 66%;
   margin: 20px 50px;
+  
 }
 
 .email {
@@ -162,11 +174,12 @@ span:hover {
 
 .account {
   font-weight: 900;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
   margin-left: 40px;
   margin-top: 30px;
+  text-align: center;
+  
 }
 .account button {
   width: 350px;
@@ -186,57 +199,50 @@ span:hover {
   border: 2px solid rgb(23, 130, 201);
 }
 
-.container2 {
-  display: flex;
-  /* background: black; */
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 55px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.bottom-container {
+  margin-top: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.bottom-container {
+  margin-top: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  
+}
+.bottom-div {
+  width: 100%;
+  height: 80px;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  
+}
+
+.about {
   font-size: 13px;
-}
-.container2 a {
-  margin: 10px 10px;
-  color: gray;
+  padding-right: 10px;
+  color: rgb(113, 118, 123);
+  font-weight: 500;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   text-decoration: none;
+  cursor: pointer;
 }
-.container2 a:hover {
-  text-decoration: underline;
+.bottom-container {
+  margin-top: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
 }
-.copyright {
-  /* background-color: black; */
-
-  text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 50px;
-}
-.copyright span {
-  display: inline-block;
-  margin-top: 10px;
-  color: gray;
-  font-size: 13px;
-}
-.copyright span:hover {
-  text-decoration: none;
+.settings {
+  margin-left: 45%;
+  margin-top: 6px;
 }
 
-.account button {
-  width: 283px;
-}
 
-.container2 {
-  height: 170px;
-}
-
-.Phone {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-}
 
 /*Media Queries (FOR MOBILE)*/
 
@@ -244,7 +250,7 @@ span:hover {
   .container {
     flex-direction: column;
   }
-  .container2 {
+  .footer__container {
     width: 100%;
   }
   .section1 {
@@ -291,16 +297,17 @@ span:hover {
 
   .section2{
     width: 100vw;
+    
   }
-  .section1 {
+  /* .section1 {
     width: 100%;
     height: 45vh;
     overflow: hidden;
-  }
+  } */
 
-  .section1 {
+  /* .section1 {
     background-size: unset;
-  }
+  } */
 
   .section2 {
     height: unset;
@@ -377,4 +384,3 @@ span:hover {
 .invert{
   filter: invert(1);
 }
-
