@@ -98,15 +98,12 @@ button {
 }
 button:hover {
   background-color: rgb(222, 222, 222);
-  border-color: rgb(51, 54, 57);
-  border-width: 1px;
+  border: 1px solid rgb(51, 54, 57);
 }
 
 .btn1 {
   width: 19vw;
-  max-width: 380px;
-  font-weight: 700;
-  border-radius: 9999px;
+  border-radius: 30px;
   text-align: center;
   margin-right: 10px;
   line-height: 25px;
@@ -116,6 +113,7 @@ button:hover {
   font-size: 1vw;
   height: 40px;
   transition: 200ms ease;
+  font-weight: 700;
 }
 
 .btn1 img {
