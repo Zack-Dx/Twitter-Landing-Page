@@ -24,7 +24,6 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
-  
 }
 .container {
   display: flex;
@@ -48,8 +47,7 @@ body {
 }
 /*Section 2*/
 .section2 {
-  
-  width: 50%;  
+  width: 50%;
   color: white;
   text-align: center;
 }
@@ -88,7 +86,6 @@ body {
 .box2 {
   display: flex;
   justify-content: center;
-  
 }
 button {
   color: black;
@@ -100,23 +97,23 @@ button {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 button:hover {
-  background-color: rgb(255, 255, 255);
-  border: 3px solid rgb(123, 120, 120);
+  background-color: rgb(222, 222, 222);
+  border: 3px solid rgb(222, 222, 222);
 }
 
 .btn1 {
-  width:19vw;
+  width: 19vw;
   max-width: 250px;
   font-weight: 600;
   border-radius: 30px;
   text-align: center;
   margin-right: 10px;
   line-height: 25px;
-  /* padding: 0px 30px; */
-  border: 3px solid rgb(218, 217, 217);/*---------------------*/
+  border: 3px solid rgb(218, 217, 217);
   cursor: pointer;
   font-size: 1vw;
-  height:100%;
+  height: 100%;
+  transition: 200ms ease;
 }
 
 .btn1 img {
@@ -135,6 +132,7 @@ button:hover {
   cursor: pointer;
   line-height: 25px;
   font-size: 1vw;
+  transition: 200ms ease;
 }
 
 .btn2 img {
@@ -142,26 +140,23 @@ button:hover {
   margin: 2px 10px;
 }
 
-
-.htab{
+.htab {
   display: flex;
   /* width:; */
   justify-content: center;
-  margin:4px 0;
-  
+  margin: 4px 0;
 }
-.htab .left,.htab .right{
-  
-  margin:auto 4px;
-  background-color: rgb(47,51,54);
-  height:1px;  
-  width:19vw;
+.htab .left,
+.htab .right {
+  margin: auto 4px;
+  background-color: rgb(47, 51, 54);
+  height: 1px;
+  width: 19vw;
 }
-.htab .center span{
-  margin:0 4px;
-  color:rgb(231,233,234);
+.htab .center span {
+  margin: 0 4px;
+  color: rgb(231, 233, 234);
   font-size: 15px;
-
 }
 
 .email {
@@ -173,11 +168,22 @@ button:hover {
   font-weight: 600;
   background-color: rgb(29, 155, 240);
   cursor: pointer;
+  transition: 200ms ease;
 }
 .email:hover {
   background-color: rgb(14, 127, 202);
-  border: 3px solid rgb(76, 158, 240);
+  border: 3px solid rgb(14, 127, 202);
 }
+
+.signin {
+  transition: 200ms ease;
+}
+
+.signin:hover {
+  background-color: rgb(14, 127, 202);
+  border: 3px solid rgb(14, 127, 202);
+}
+
 p {
   font-size: 12px;
 
@@ -241,7 +247,7 @@ footer {
 }
 .container2 a {
   margin: 4px 0;
-  padding-right:16px;
+  padding-right: 16px;
   color: grey;
   text-decoration: none;
   /* margin-bottom: 10px; */
@@ -279,24 +285,22 @@ footer {
   text-align: center;
 }
 
-.Phone p{
-  margin-top:8px;
+.Phone p {
+  margin-top: 8px;
   margin-bottom: 20px;
 }
 
 /*Media Queries (FOR MOBILE)*/
 
 @media (max-width: 820px) {
-
- 
-  .btn1{
+  .btn1 {
     width: 250px;
-    height:30px;
+    height: 30px;
     font-size: 13px;
   }
-  .btn2{
+  .btn2 {
     width: 250px;
-    height:30px;
+    height: 30px;
     font-size: 13px;
   }
   .box1 img {
@@ -313,10 +317,8 @@ footer {
   .account button {
     margin-top: 20px;
   }
-  
 }
 @media (max-width: 550px) {
-  
   .container {
     flex-direction: column;
   }
@@ -396,8 +398,6 @@ footer {
     margin: 10px auto;
   }
 
- 
-
   .account {
     padding-bottom: 20px;
   }
@@ -429,7 +429,7 @@ footer {
   right: 1.5rem;
   border-radius: 50%;
   z-index: 2000;
-  border:2px solid black;
+  border: 2px solid black;
   justify-content: center;
   text-align: center;
   cursor: pointer;
@@ -445,8 +445,8 @@ footer {
   color: black !important;
 }
 
-.dark-mode .center span{
-  color:black;
+.dark-mode .center span {
+  color: black;
 }
 
 .black {
