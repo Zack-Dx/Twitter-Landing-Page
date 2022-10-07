@@ -416,12 +416,9 @@ footer {
   justify-content: center;
   text-align: center;
   cursor: pointer;
-}
-
-.fa-sun:before {
-  position: relative;
-  top: 1.1vh;
-  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dark-mode {
