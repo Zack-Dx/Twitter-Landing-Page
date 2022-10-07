@@ -13,6 +13,16 @@
   src: url("../fonts/chirp-extended-heavy-web.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Open Sans Medium";
+  src: url(../fonts/OpenSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,9 +35,226 @@ body {
   width: 100%;
   background-color: black;
 }
+
 .container {
   display: flex;
   align-items: center;
+}
+
+.container .signin-window {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 123vh;
+  background-color: rgba(255, 255, 255, 0.200);
+}
+
+.auth-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45vw;
+  height: 90vh;
+  background-color: black;
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.auth-window .top-icons {
+  padding: 10px;
+  width: 55%;
+  height: 8%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.top-icons .close {
+  width: 9.5%;
+  height: 100%;
+  border-radius: 50%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.top-icons .twitter-icon {
+  width: 16%;
+  height: 100%;
+  margin-top: 10px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close i {
+  font-size: 24px;
+}
+
+.twitter-icon img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.auth-window .sign-in-form {
+  width: 50%;
+  height: 70%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* background-color: red; */
+  /* text-align: left; */
+}
+
+.sign-in-form h2 {
+  font-family: "TwitterChirpBold";
+  color: #fff;
+  font-size: 30px;
+}
+
+.sign-in-form .auth {
+  width: 100%;
+  height: 9%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  border-radius: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.signin-google {
+  background-color: white;
+}
+
+.signin-apple {
+  background-color: white;
+}
+
+.auth .logo {
+  width: 8.5%;
+  height: 70%;
+  margin-top: 8px;
+}
+
+.auth img {
+  height: 70%;
+  object-fit: cover;
+}
+
+.sign-in-form .user-input {
+  width: 100%;
+  height: 12%;
+  position: relative;
+}
+
+.user-input input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333639;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.user-input input:focus {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  border-color: #449eef;
+}
+
+.next-button {
+  background-color: white;
+}
+
+.forgot-pwd {
+  border: 1px solid #333639;
+  background-color: black;
+  color: #fff;
+}
+
+.auth:hover {
+  transition: opacity cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  opacity: 0.9;
+}
+
+.sign-in h3 {
+  position: absolute;
+  top: 90%;
+  color: #72767b;
+  font-family: "TwitterChirpRegular";
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.auth-window h3 a {
+  color: #449eef;
+  cursor: pointer;
+}
+
+.auth-window h3 a:hover {
+  text-decoration: underline;
+}
+
+.sign-up {
+  display: none;
+}
+
+.sign-up .sign-up-form {
+  width: 50%;
+  height: 50%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sign-up-form h2 {
+  font-family: "TwitterChirpBold";
+  color: #fff;
+  font-size: 30px;
+}
+
+.sign-up-form .auth {
+  width: 100%;
+  height: 13%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  border-radius: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sign-up h3 {
+  color: #72767b;
+  font-family: "TwitterChirpRegular";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+#login-text {
+  font-size: 15px;
+  margin-bottom: -100px;
 }
 
 .section1 {
@@ -45,6 +272,7 @@ body {
   margin: auto;
   display: inline-block;
 }
+
 /*Section 2*/
 .section2 {
   width: 50%;
@@ -87,6 +315,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 button {
   color: black;
   background: white;
@@ -96,6 +325,7 @@ button {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 button:hover {
   background-color: rgb(222, 222, 222);
   border: 3px solid rgb(222, 222, 222);
@@ -146,6 +376,7 @@ button:hover {
   justify-content: center;
   margin: 4px 0;
 }
+
 .htab .left,
 .htab .right {
   margin: auto 4px;
@@ -153,10 +384,14 @@ button:hover {
   height: 1px;
   width: 19vw;
 }
+
 .htab .center span {
   margin: 0 4px;
   color: rgb(231, 233, 234);
   font-size: 15px;
+  text-decoration: none;
+  cursor: text;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .email {
@@ -170,6 +405,7 @@ button:hover {
   cursor: pointer;
   transition: 200ms ease;
 }
+
 .email:hover {
   background-color: rgb(14, 127, 202);
   border: 3px solid rgb(14, 127, 202);
@@ -193,17 +429,21 @@ p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 span {
   color: rgb(29, 155, 240);
   cursor: pointer;
 }
+
 span:hover {
   text-decoration: underline;
   text-decoration-color: rgb(29, 155, 240);
 }
+
 footer {
   position: relative;
 }
+
 .account {
   font-weight: 900;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -212,30 +452,37 @@ footer {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
 .account button {
   margin: auto;
   width: 350px;
   margin-top: 28px;
-  color: white; /*change needed*/
+  color: white;
+  /*change needed*/
   padding: 10px 0px;
-  border: 2px solid rgb(29, 155, 240); /*change needed*/
+  border: 2px solid rgb(29, 155, 240);
+  /*change needed*/
   border-radius: 30px;
   font-weight: 600;
-  background-color: rgb(29, 155, 240); /*change needed*/
+  background-color: rgb(29, 155, 240);
+  /*change needed*/
   cursor: pointer;
   font-size: 18px;
 }
 
 .account button:hover {
-  background-color: rgb(23, 130, 201); /*change needed*/
-  border: 2px solid rgb(23, 130, 201); /*change needed*/
+  background-color: rgb(23, 130, 201);
+  /*change needed*/
+  border: 2px solid rgb(23, 130, 201);
+  /*change needed*/
 }
 
 .container2 {
   /* padding: 10px auto 0 auto !important; */
   display: flex;
   /* background: black; */
-  background: transparent; /*changed just remove this*/
+  background: transparent;
+  /*changed just remove this*/
   padding: 20px 10px;
   padding-bottom: 0px;
   align-items: center;
@@ -245,6 +492,7 @@ footer {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
+
 .container2 a {
   margin: 4px 0;
   padding-right: 16px;
@@ -252,6 +500,7 @@ footer {
   text-decoration: none;
   /* margin-bottom: 10px; */
 }
+
 .container2 a:hover {
   text-decoration: underline;
   transition: 1s;
@@ -281,58 +530,73 @@ footer {
     height: 30px;
     font-size: 13px;
   }
+
   .btn2 {
     width: 250px;
     height: 30px;
     font-size: 13px;
   }
+
   .box1 img {
     height: 35px;
     margin: 10px 10px;
   }
+
   .box1 h1 {
     font-size: 45px;
   }
+
   .box1 h2 {
     font-size: 30px;
     margin-bottom: 20px;
   }
+
   .account button {
     margin-top: 20px;
   }
 }
+
 @media (max-width: 550px) {
   .container {
     flex-direction: column;
   }
+
   .container2 {
     width: 100%;
     padding: 10px 10px;
   }
+
   .section1 {
     width: 100%;
     display: none;
   }
+
   .section2 {
     height: 754px;
     width: 100%;
   }
+
   #twit {
     height: 19%;
   }
+
   .box1 {
     margin-left: 0;
   }
+
   .box1 h1 {
     font-size: 37px;
   }
+
   .box2 {
     display: block;
   }
+
   .btn1,
   .btn2 {
     margin: 10px auto;
   }
+
   .email {
     display: block;
     margin: auto;
@@ -341,6 +605,10 @@ footer {
   .account {
     display: block;
     margin: 22px auto;
+  }
+
+  .auth text {
+    display: none;
   }
 }
 
@@ -354,6 +622,7 @@ footer {
   .section2 {
     width: 100vw;
   }
+
   .section1 {
     width: 100%;
     height: 45vh;
@@ -376,6 +645,7 @@ footer {
     display: block;
     /* height: 100px; */
   }
+
   .btn1,
   .btn2 {
     margin: 10px auto;
@@ -417,6 +687,7 @@ footer {
   text-align: center;
   cursor: pointer;
 }
+
 .fa-sun:before {
   position: absolute;
   top: 10px;
@@ -435,9 +706,11 @@ footer {
 .black {
   color: black;
 }
+
 .blue {
   background-color: rgb(29, 155, 240);
 }
+
 .invert {
   filter: invert(1);
 }
