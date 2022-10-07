@@ -417,10 +417,11 @@ footer {
   text-align: center;
   cursor: pointer;
 }
+
 .fa-sun:before {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  position: relative;
+  top: 1.1vh;
+  left: 5%;
 }
 
 .dark-mode {
