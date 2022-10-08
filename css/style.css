@@ -61,6 +61,16 @@ body {
   border-radius: 15px;
 }
 
+.blue-mode {
+  background-color: rgb(29, 155, 240);
+  color: #fff;
+}
+
+.dark-button {
+  background-color: black;
+  color: white;
+}
+
 .auth-window .top-icons {
   padding: 10px;
   width: 55%;
@@ -242,6 +252,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: 2px solid #dad9d9;
 }
 
 .sign-up h3 {
@@ -740,13 +751,13 @@ footer {
     justify-content: space-around;
     /* background-color: red; */
   }
-  
+
   .sign-up-form h2 {
     font-family: "TwitterChirpBold";
     color: #fff;
     font-size: 30px;
   }
-  
+
   .sign-up-form .auth {
     width: 100%;
     height: 13%;
