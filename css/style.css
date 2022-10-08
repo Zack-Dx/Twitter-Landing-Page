@@ -129,7 +129,7 @@ body {
   height: 9%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
-  border-radius: 30px; 
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +237,7 @@ body {
   height: 13%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
-  border-radius: 30px; 
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -607,8 +607,162 @@ footer {
     margin: 22px auto;
   }
 
-  .auth text {
+  /* .auth text {
     display: none;
+  } */
+
+  .container .signin-window {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .auth-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+    border-radius: 15px;
+  }
+
+  .auth-window .top-icons {
+    padding: 10px;
+    width: 55%;
+    height: 6%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+  }
+
+  .top-icons .close {
+    width: 9.5%;
+    height: 100%;
+    border-radius: 50%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .top-icons .twitter-icon {
+    width: 16%;
+    height: 100%;
+    margin-top: 10px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close i {
+    font-size: 24px;
+  }
+
+  .auth-window .sign-in-form {
+    padding-top: 60px;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: red; */
+  }
+
+  .form h2 {
+    font-family: "TwitterChirpBold";
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .sign-in-form .auth {
+    width: 100%;
+    height: 9%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #dad9d9;
+  }
+
+  .signin-google {
+    background-color: white;
+  }
+
+  .signin-apple {
+    background-color: white;
+  }
+
+  .auth .logo {
+    width: 9%;
+    height: 70%;
+    margin-top: 8px;
+  }
+
+  .auth img {
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .sign-in-form .user-input {
+    width: 100%;
+    height: 12%;
+    position: relative;
+  }
+
+  .sign-in h3 {
+    position: absolute;
+    top: 85%;
+    color: #72767b;
+    font-family: "TwitterChirpRegular";
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .sign-up .sign-up-form {
+    padding-top: 100px;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: red; */
+  }
+  
+  .sign-up-form h2 {
+    font-family: "TwitterChirpBold";
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .sign-up-form .auth {
+    width: 100%;
+    height: 13%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #dad9d9;
+  }
+
+  #login-text {
+    font-size: 15px;
+    margin-bottom: -100px;
   }
 }
 
