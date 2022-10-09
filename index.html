@@ -195,7 +195,7 @@
 
         var flag = 0;
         document.querySelector('.toggle__button').addEventListener('click', function () {
-          if (window.matchMedia("(min-width: 1030px) and (max-width: 1366px)").matches) {
+          if (window.matchMedia("(min-width: 1030px)").matches) {
             document.querySelectorAll('.close i').forEach((elem) => elem.classList.toggle("black"));
             document.querySelectorAll('.form h2').forEach((elem) => elem.style.color = 'white');
             if (flag === 0) {
