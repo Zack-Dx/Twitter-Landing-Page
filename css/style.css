@@ -34,7 +34,7 @@ body {
   background-image: url(../img/background1.png);
   background-position: center;
   width: 50%;
-  height: 85vh;
+  height: 115vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -49,7 +49,6 @@ body {
 .section2 {
   width: 50%;
   color: white;
-  text-align: center;
 }
 
 .box1 {
@@ -84,8 +83,9 @@ body {
 /*Box2*/
 
 .box2 {
-  display: flex;
+  display: column;
   justify-content: center;
+  margin-left: 40px;
 }
 button {
   color: black;
@@ -98,18 +98,17 @@ button {
 }
 button:hover {
   background-color: rgb(222, 222, 222);
-  border: 3px solid rgb(222, 222, 222);
 }
 
 .btn1 {
-  width: 19vw;
-  max-width: 250px;
+  width: 29vw;
+  max-width: 280px;
   font-weight: 600;
   border-radius: 30px;
   text-align: center;
   margin-right: 10px;
-  line-height: 25px;
-  border: 3px solid rgb(218, 217, 217);
+  line-height: 35px;
+  border: 1px solid rgb(218, 217, 217);
   cursor: pointer;
   font-size: 1vw;
   height: 100%;
@@ -123,14 +122,15 @@ button:hover {
 
 /*Btn2*/
 .btn2 {
-  width: 19vw;
-  max-width: 250px;
-  margin-left: 10px;
-  border: 3px solid rgb(218, 217, 217);
+  width: 29vw;
+  max-width: 280px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(218, 217, 217);
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
-  line-height: 25px;
+  line-height: 35px;
   font-size: 1vw;
   transition: 200ms ease;
 }
@@ -142,19 +142,17 @@ button:hover {
 
 .htab {
   display: flex;
-  /* width:; */
-  justify-content: center;
   margin: 4px 0;
+  margin-left: 40px;
 }
 .htab .left,
 .htab .right {
   margin: auto 4px;
-  background-color: rgb(47, 51, 54);
+  background-color: rgb(218, 217, 217);
   height: 1px;
-  width: 19vw;
+  width: 10vw;
 }
 .htab .center span {
-  margin: 0 4px;
   color: rgb(231, 233, 234);
   font-size: 15px;
 }
@@ -162,12 +160,14 @@ button:hover {
 .email {
   display: inline-block;
   color: white;
-  padding: 10px 40px;
+  padding: 8px 52px;
+  margin-top: 15px;
   border: 3px solid rgb(29, 155, 240);
   border-radius: 30px;
   font-weight: 600;
   background-color: rgb(29, 155, 240);
   cursor: pointer;
+  font-size: 13px;
   transition: 200ms ease;
 }
 .email:hover {
@@ -185,11 +185,10 @@ button:hover {
 }
 
 p {
-  font-size: 12px;
+  font-size: 11px;
 
   color: rgb(115, 131, 134);
   margin-top: 20px;
-  text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -213,12 +212,11 @@ footer {
   margin-bottom: 10px;
 }
 .account button {
-  margin: auto;
   width: 350px;
   margin-top: 28px;
   color: white; /*change needed*/
-  padding: 10px 0px;
-  border: 2px solid rgb(29, 155, 240); /*change needed*/
+  padding: 6px 0px;
+  border: 1px solid rgb(29, 155, 240); /*change needed*/
   border-radius: 30px;
   font-weight: 600;
   background-color: rgb(29, 155, 240); /*change needed*/
@@ -228,14 +226,12 @@ footer {
 
 .account button:hover {
   background-color: rgb(23, 130, 201); /*change needed*/
-  border: 2px solid rgb(23, 130, 201); /*change needed*/
+  border: 1px solid rgb(23, 130, 201); /*change needed*/
 }
 
 .container2 {
-  /* padding: 10px auto 0 auto !important; */
+  padding: 10px auto 0 auto;
   display: flex;
-  /* background: black; */
-  background: transparent; /*changed just remove this*/
   padding: 20px 10px;
   padding-bottom: 0px;
   align-items: center;
@@ -250,7 +246,6 @@ footer {
   padding-right: 16px;
   color: grey;
   text-decoration: none;
-  /* margin-bottom: 10px; */
 }
 .container2 a:hover {
   text-decoration: underline;
@@ -264,8 +259,7 @@ footer {
 .Phone {
   flex-direction: column;
   align-items: start;
-  justify-content: center;
-  text-align: center;
+  margin-left: 40px;
 }
 
 .Phone p {
