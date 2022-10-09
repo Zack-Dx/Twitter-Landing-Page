@@ -404,7 +404,7 @@ footer {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  border-radius: 50%;
+  border-radius: 50%;   
   z-index: 2000;
   border: 2px solid black;
   justify-content: center;
