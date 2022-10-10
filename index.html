@@ -29,8 +29,7 @@
     </div>
     <div class="section2">
       <div class="box1">
-        <a href="https://twitter.com/"><img class="logo" id="change" src="./img/twitter-symbol.png"
-            alt="Logo Twitter" /></a>
+        <a href="https://twitter.com/"><img class="logo change" src="./img/twitter-symbol.png" alt="Logo Twitter" /></a>
 
         <h1 class="heading1">Happening now</h1>
         <h2 class="heading2">Join Twitter today.</h2>
@@ -71,20 +70,20 @@
             <i class="ri-close-line"></i>
           </div>
           <div class="twitter-icon">
-            <img src="./img/twitter-symbol.png" alt="Twitter Logo">
+            <img src="./img/twitter-symbol.png" class="logo change" alt="Twitter Logo">
           </div>
         </div>
-        <div class="sign-in-form">
+        <div class="sign-in-form form">
           <h2>Sign in to Twitter</h2>
-          <div class="signin-google auth">
+          <div class="signin-google auth to-be-toggled">
             <div class="google-logo logo">
               <img src="./img/google-logo.png" alt="" srcset="">
             </div>
             <text>Sign in with Google</text>
           </div>
-          <div class="signin-apple auth">
+          <div class="signin-apple auth to-be-toggled">
             <div class="apple-logo logo">
-              <img src="./img/apple-logo.png">
+              <img class="apple-toggle" src="./img/apple-logo.png">
             </div>
             <text>Sign in with Apple</text>
           </div>
@@ -96,7 +95,7 @@
           <div class="user-input">
             <input type="text" placeholder="Phone, email, or username">
           </div>
-          <div class="next-button auth">
+          <div class="next-button auth to-be-toggled">
             Next
           </div>
           <div class="forgot-pwd auth">
@@ -111,29 +110,29 @@
             <i class="ri-close-line"></i>
           </div>
           <div class="twitter-icon">
-            <img src="./img/twitter-symbol.png" alt="Twitter Logo">
+            <img src="./img/twitter-symbol.png" class="logo change" alt="Twitter Logo">
           </div>
         </div>
-        <div class="sign-up-form">
+        <div class="sign-up-form form">
           <h2>Join Twitter today</h2>
-          <div class="signin-google auth">
+          <div class="signin-google auth to-be-toggled">
             <div class="google-logo logo">
-              <img src="./img/google-logo.png" alt="" srcset="">
+              <img src="./img/google-logo.png">
             </div>
-            <text>Sign in with Google</text>
+            <text>Sign up with Google</text>
           </div>
-          <div class="signin-apple auth">
+          <div class="signin-apple auth to-be-toggled">
             <div class="apple-logo logo">
-              <img src="./img/apple-logo.png">
+              <img class="apple-toggle" src="./img/apple-logo.png">
             </div>
-            <text>Sign in with Apple</text>
+            <text>Sign up with Apple</text>
           </div>
           <div class="htab">
             <div class="left"></div>
             <div class="center"><span>or</span></div>
             <div class="right"></div>
           </div>
-          <div class="next-button auth">
+          <div class="next-button auth to-be-toggled">
             Sign up with phone or email
           </div>
           <h3>By signing up, you agree to the <a>Terms of Service</a> and<br>
@@ -173,20 +172,64 @@
           const element = document.body;
           element.classList.toggle("dark-mode");
 
+          if (window.matchMedia("(min-width: 1030px)").matches) {
+            document.querySelectorAll('.auth-window').forEach((elem) => elem.classList.toggle("blue-mode"));
+            document.querySelectorAll(".auth-window .change").forEach((elem) => elem.src = "./img/Twitter-logo-png.png");
+          }
+          else document.querySelectorAll('.auth-window').forEach((elem) => elem.classList.toggle("dark-mode"));
+
           document.querySelector(".fa-solid").classList.toggle("fa-moon");
           document.querySelector(".account").classList.toggle("black");
           document.querySelector(".heading1").classList.toggle("black");
           document.querySelector(".heading2").classList.toggle("black");
+          document.querySelectorAll('.close i').forEach((elem) => elem.classList.toggle("black"));
           document.querySelector(".logo").classList.toggle("invert");
 
-          var dispImg = document.getElementById("change");
-          if (dispImg.src.match("./img/twitter-symbol.png")) {
-            dispImg.src = "./img/Twitter-logo-png.png";
+          document.querySelectorAll(".change").forEach(function (elem) {
+            if (elem.src.match("./img/twitter-symbol.png")) elem.src = "./img/Twitter-logo-png.png";
+            else elem.src = "./img/twitter-symbol.png";
+          });
+
+          document.querySelectorAll('.form h2').forEach((elem) => elem.classList.add('black'));
+        }
+
+        var flag = 0;
+        document.querySelector('.toggle__button').addEventListener('click', function () {
+          if (window.matchMedia("(min-width: 1030px)").matches) {
+            document.querySelectorAll('.close i').forEach((elem) => elem.classList.toggle("black"));
+            document.querySelectorAll('.form h2').forEach((elem) => elem.style.color = 'white');
+            if (flag === 0) {
+              document.querySelectorAll('.to-be-toggled').forEach((elem) => {
+                elem.style.backgroundColor = 'black';
+                elem.style.color = 'white';
+                elem.style.border = '1px solid white';
+              })
+              document.querySelector('.user-input input').style.backgroundColor = 'white';
+              document.querySelectorAll('.auth-window h3').forEach((elem) => elem.style.color = 'white');
+              document.querySelectorAll('.auth-window h3 a').forEach((elem) => elem.style.color = 'black');
+              flag = 1;
+            }
+            else {
+              document.querySelectorAll('.to-be-toggled').forEach((elem) => {
+                elem.style.backgroundColor = 'white';
+                elem.style.color = 'black';
+              })
+              document.querySelectorAll('.auth-window h3').forEach((elem) => elem.style.color = '#72767b');
+              document.querySelectorAll('.auth-window h3 a').forEach((elem) => elem.style.color = '#449eef');
+              flag = 0;
+            }
           }
           else {
-            dispImg.src = "./img/twitter-symbol.png";
+            if (flag === 0) {
+              document.querySelectorAll('.form h2').forEach((elem) => elem.style.color = 'black');
+              flag = 1;
+            }
+            else {
+              document.querySelectorAll('.form h2').forEach((elem) => elem.style.color = 'white');
+              flag = 0;
+            }
           }
-        }
+        })
 
         let signin = document.querySelector('.signin');
         let signInWindow = document.querySelector('.signin-window');
@@ -218,6 +261,6 @@
           });
         });
       </script>
-</body>
+</body> 
 
 </html>
