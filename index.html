@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Twitter Landing Page">
-    <meta name="robots" content="noindex, nofollow">
-    <title> Twitter. It's what's happening / Twitter </title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <div class="toggle__button" onclick="colorToggle()">
-      <div class="toggle">
-        <i class="fa-solid fa-sun"></i>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Twitter Landing Page">
+  <meta name="robots" content="noindex, nofollow">
+  <title> Twitter. It's what's happening / Twitter </title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="toggle__button" onclick="colorToggle()">
+    <div class="toggle">
+      <i class="fa-solid fa-sun"></i>
     </div>
-    <div class="container">
-      <div class="section1">
-        <div class="logo" ></div>
-        <img id="twit" src="./img/twitter-symbol.png" alt="Logo Twitter" />
+  </div>
+  <div class="container">
+    <div class="section1">
+      <div class="logo"></div>
+      <img id="twit" src="./img/twitter-symbol.png" alt="Logo Twitter" />
+    </div>
+    <div class="section2">
+      <div class="box1">
+        <a href="https://twitter.com/"><img class="logo change" src="./img/twitter-symbol.png" alt="Logo Twitter" /></a>
+
+        <h1 class="heading1">Happening now</h1>
+        <h2 class="heading2">Join Twitter today.</h2>
+      </div>
+      <div class="box2">
+        <button class="btn1">
+          <img src="./img/google-logo.png" alt="Google Logo" />Sign up with Google
+        </button>
+        <button class="btn2">
+          <img src="./img/apple-logo.png" alt="Apple Logo" />
+          Sign up with Apple
+        </button>
       </div>
 
-      <div class="section2">
-        <div class="box1">
-          <a href="https://twitter.com/"
-            ><img
-              class="logo" id="change"
-              src="./img/twitter-symbol.png"
-              alt="Logo Twitter"
-          /></a>
+      <div class="htab">
+        <div class="left"></div>
+        <div class="center"><span>or</span></div>
+        <div class="right"></div>
+      </div>
 
-          <h1 class="heading1">Happening now</h1>
-          <h2 class="heading2">Join Twitter today.</h2>
+      <div class="Phone">
+        <button class="email">Sign up with Phone or Email</button>
+        <p #id="Cookie">
+          By signing up, you agree to the <span>Terms of Service</span> and
+          <span>Privacy Policy</span> , including <span>Cookie Use</span>.
+        </p>
+
+        <div class="account">
+          Already have an account?
+          <button class="signin">Sign in</button>
         </div>
-        <div class="box2">
-          <button class="btn1">
-            <img src="./img/google-logo.png" alt="Google Logo" />Sign up with Google
-          </button>
-          <button class="btn2">
-            <img src="./img/apple-logo.png" alt="Apple Logo" />
-            Sign up with Apple
-          </button>
-        </div>
-
-        
-
-        <div class="htab">
-          <div class="left"></div>
-          <div class="center"><span>or</span></div>
-          <div class="right"></div>
-        </div>
-
         <div class="Phone">
           <button class="email">Sign up with Phone or Email</button>
           <p #id="Cookie">
@@ -70,55 +71,206 @@
           <div class="account">   
             Already have an account?
             <button class="signin">Sign in</button>
+      </div>
+    </div>
+    <div class="signin-window">
+      <div class="sign-in auth-window">
+        <div class="top-icons">
+          <div class="close" title="Close">
+            <i class="ri-close-line"></i>
           </div>
+          <div class="twitter-icon">
+            <img src="./img/twitter-symbol.png" class="logo change" alt="Twitter Logo">
+          </div>
+        </div>
+        <div class="sign-in-form form">
+          <h2>Sign in to Twitter</h2>
+          <div class="signin-google auth to-be-toggled">
+            <div class="google-logo logo">
+              <img src="./img/google-logo.png" alt="" srcset="">
+            </div>
+            <text>Sign in with Google</text>
+          </div>
+          <div class="signin-apple auth to-be-toggled">
+            <div class="apple-logo logo">
+              <img class="apple-toggle" src="./img/apple-logo.png">
+            </div>
+            <text>Sign in with Apple</text>
+          </div>
+          <div class="htab">
+            <div class="left"></div>
+            <div class="center"><span>or</span></div>
+            <div class="right"></div>
+          </div>
+          <div class="user-input">
+            <input type="text" placeholder="Phone, email, or username">
+          </div>
+          <div class="next-button auth to-be-toggled">
+            Next
+          </div>
+          <div class="forgot-pwd auth">
+            Forgot password?
+          </div>
+          <h3>Don't have an account? <a id="signup-btn">Sign up</a></h3>
+        </div>
+      </div>
+      <div class="sign-up auth-window">
+        <div class="top-icons">
+          <div class="close" title="Close">
+            <i class="ri-close-line"></i>
+          </div>
+          <div class="twitter-icon">
+            <img src="./img/twitter-symbol.png" class="logo change" alt="Twitter Logo">
+          </div>
+        </div>
+        <div class="sign-up-form form">
+          <h2>Join Twitter today</h2>
+          <div class="signin-google auth to-be-toggled">
+            <div class="google-logo logo">
+              <img src="./img/google-logo.png">
+            </div>
+            <text>Sign up with Google</text>
+          </div>
+          <div class="signin-apple auth to-be-toggled">
+            <div class="apple-logo logo">
+              <img class="apple-toggle" src="./img/apple-logo.png">
+            </div>
+            <text>Sign up with Apple</text>
+          </div>
+          <div class="htab">
+            <div class="left"></div>
+            <div class="center"><span>or</span></div>
+            <div class="right"></div>
+          </div>
+          <div class="next-button auth to-be-toggled">
+            Sign up with phone or email
+          </div>
+          <h3>By signing up, you agree to the <a>Terms of Service</a> and<br>
+            <a>Privacy Policy</a>, including <a>Cookie Use</a>
+          </h3>
+          <h3 id="login-text">Have an account already? <a id="log-in">Log in</a></h3>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div class="container2">
-        <a href="#">About</a>
-        <a href="#">Help Center</a>
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Cookie Poilicy</a>
-        <a href="#">Accessibililty</a>
-        <a href="#">Ads info</a>
-        <a href="#">Blog</a>
-        <a href="#">Status</a>
-        <a href="#">Careers</a>
-        <a href="#">Brand Resources</a>
-        <a href="#">Advertising</a>
-        <a href="#">Marketing</a>
-        <a href="#">Twitter for Business</a>
-        <a href="#">Developers</a>
-        <a href="#">Directory</a>
-        <a href="#">Settings</a>
-        <a href="#">2022 Twitter,Inc</a>
+  <footer>
+    <div class="container2">
+      <a href="#">About</a>
+      <a href="#">Help Center</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Poilicy</a>
+      <a href="#">Accessibililty</a>
+      <a href="#">Ads info</a>
+      <a href="#">Blog</a>
+      <a href="#">Status</a>
+      <a href="#">Careers</a>
+      <a href="#">Brand Resources</a>
+      <a href="#">Advertising</a>
+      <a href="#">Marketing</a>
+      <a href="#">Twitter for Business</a>
+      <a href="#">Developers</a>
+      <a href="#">Directory</a>
+      <a href="#">Settings</a>
+      <a href="#">2022 Twitter,Inc</a>
 
-        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-    <script>
-      function colorToggle() {
-        const element = document.body;
-        element.classList.toggle("dark-mode");
-        
-        document.querySelector(".fa-solid").classList.toggle("fa-moon");
-        document.querySelector(".account").classList.toggle("black");
-        document.querySelector(".heading1").classList.toggle("black");
-        document.querySelector(".heading2").classList.toggle("black");
-        document.querySelector(".logo").classList.toggle("invert");
-        
-        var dispImg=document.getElementById("change");
-        if(dispImg.src.match("./img/twitter-symbol.png")){
-          dispImg.src="./img/Twitter-logo-png.png";
+      <script>
+        function colorToggle() {
+          const element = document.body;
+          element.classList.toggle("dark-mode");
+
+          if (window.matchMedia("(min-width: 1030px)").matches) {
+            document.querySelectorAll('.auth-window').forEach((elem) => elem.classList.toggle("blue-mode"));
+            document.querySelectorAll(".auth-window .change").forEach((elem) => elem.src = "./img/Twitter-logo-png.png");
+          }
+          else document.querySelectorAll('.auth-window').forEach((elem) => elem.classList.toggle("dark-mode"));
+
+          document.querySelector(".fa-solid").classList.toggle("fa-moon");
+          document.querySelector(".account").classList.toggle("black");
+          document.querySelector(".heading1").classList.toggle("black");
+          document.querySelector(".heading2").classList.toggle("black");
+          document.querySelectorAll('.close i').forEach((elem) => elem.classList.toggle("black"));
+          document.querySelector(".logo").classList.toggle("invert");
+
+          document.querySelectorAll(".change").forEach(function (elem) {
+            if (elem.src.match("./img/twitter-symbol.png")) elem.src = "./img/Twitter-logo-png.png";
+            else elem.src = "./img/twitter-symbol.png";
+          });
+
+          document.querySelectorAll('.form h2').forEach((elem) => elem.classList.add('black'));
         }
-        else{
-          dispImg.src="./img/twitter-symbol.png";
-        }
-      }
 
-      
-    </script>
-  </body>
+        var flag = 0;
+        document.querySelector('.toggle__button').addEventListener('click', function () {
+          if (window.matchMedia("(min-width: 1030px)").matches) {
+            document.querySelectorAll('.close i').forEach((elem) => elem.classList.toggle("black"));
+            document.querySelectorAll('.form h2').forEach((elem) => elem.style.color = 'white');
+            if (flag === 0) {
+              document.querySelectorAll('.to-be-toggled').forEach((elem) => {
+                elem.style.backgroundColor = 'black';
+                elem.style.color = 'white';
+                elem.style.border = '1px solid white';
+              })
+              document.querySelector('.user-input input').style.backgroundColor = 'white';
+              document.querySelectorAll('.auth-window h3').forEach((elem) => elem.style.color = 'white');
+              document.querySelectorAll('.auth-window h3 a').forEach((elem) => elem.style.color = 'black');
+              flag = 1;
+            }
+            else {
+              document.querySelectorAll('.to-be-toggled').forEach((elem) => {
+                elem.style.backgroundColor = 'white';
+                elem.style.color = 'black';
+              })
+              document.querySelectorAll('.auth-window h3').forEach((elem) => elem.style.color = '#72767b');
+              document.querySelectorAll('.auth-window h3 a').forEach((elem) => elem.style.color = '#449eef');
+              flag = 0;
+            }
+          }
+          else {
+            if (flag === 0) {
+              document.querySelectorAll('.form h2').forEach((elem) => elem.style.color = 'black');
+              flag = 1;
+            }
+            else {
+              document.querySelectorAll('.form h2').forEach((elem) => elem.style.color = 'white');
+              flag = 0;
+            }
+          }
+        })
+
+        let signin = document.querySelector('.signin');
+        let signInWindow = document.querySelector('.signin-window');
+        let body = document.querySelector('body');
+        signin.addEventListener('click', function () {
+          signInWindow.style.display = 'initial';
+          body.style.overflow = 'hidden';
+        });
+
+        let signupBtn = document.querySelector('#signup-btn');
+        let signIn = document.querySelector('.sign-in');
+        let signUp = document.querySelector('.sign-up');
+        signupBtn.addEventListener('click', function () {
+          signUp.style.display = 'initial';
+          signIn.style.display = 'none';
+        })
+
+        let logIn = document.querySelector('#log-in');
+        logIn.addEventListener('click', function () {
+          signIn.style.display = 'initial';
+          signUp.style.display = 'none';
+        })
+
+        let close = document.querySelectorAll('.close');
+        close.forEach(function (elem) {
+          elem.addEventListener('click', function () {
+            signInWindow.style.display = 'none';
+            body.style.overflow = 'initial';
+          });
+        });
+      </script>
+</body> 
+
 </html>
