@@ -280,6 +280,7 @@ body {
 
 .section1 img {
   height: 50%;
+  max-width: 100%;
   margin: auto;
   display: inline-block;
 }
@@ -287,6 +288,7 @@ body {
 /*Section 2*/
 .section2 {
   width: 50%;
+  padding: 0 1rem;
   color: white;
   text-align: center;
 }
@@ -343,7 +345,8 @@ button:hover {
 }
 
 .btn1 {
-  width: 19vw;
+  width: 100%;
+  padding: 1rem;
   max-width: 250px;
   font-weight: 600;
   border-radius: 30px;
@@ -353,7 +356,7 @@ button:hover {
   border: 3px solid rgb(218, 217, 217);
   cursor: pointer;
   font-size: 1vw;
-  height: 100%;
+  height: 45px;
   transition: 200ms ease;
 }
 
@@ -364,7 +367,8 @@ button:hover {
 
 /*Btn2*/
 .btn2 {
-  width: 19vw;
+  width: 100%;
+  padding: 1rem;
   max-width: 250px;
   margin-left: 10px;
   border: 3px solid rgb(218, 217, 217);
@@ -373,6 +377,7 @@ button:hover {
   cursor: pointer;
   line-height: 25px;
   font-size: 1vw;
+  height: 45px;
   transition: 200ms ease;
 }
 
@@ -466,7 +471,8 @@ footer {
 
 .account button {
   margin: auto;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   margin-top: 28px;
   color: white;
   /*change needed*/
@@ -518,7 +524,7 @@ footer {
 }
 
 .account button {
-  width: 283px;
+  width: 100%;
 }
 
 .Phone {
